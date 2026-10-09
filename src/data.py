@@ -54,12 +54,25 @@ def clean_data(train, test):
         EXPECTED_LABELS
     )
 
-    # Linhas com pelo menos três campos de entrada vazios
+    # Linhas com pelo menos três campos vazios
     too_many_missing_mask = (
         clean_train[FEATURE_COLUMNS].isna().sum(axis=1) >= 3
     )
 
-    rows_to_remove = invalid_label_mask | too_many_missing_mask
+    # Descrições anormalmente longas
+    description_length = (
+        clean_train["description"]
+        .fillna("")
+        .str.len()
+    )
+
+    abnormally_long_description_mask = description_length > 20_000
+
+    rows_to_remove = (
+        invalid_label_mask
+        | too_many_missing_mask
+        | abnormally_long_description_mask
+    )
 
     print("Linhas removidas do treino:", rows_to_remove.sum())
 

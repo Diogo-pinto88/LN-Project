@@ -67,7 +67,7 @@ The affected row indices were:
 
 ## Cleaning decision
 
-Seven malformed training rows were excluded:
+Eight malformed training rows were excluded:
 
 - three rows with invalid labels;
 - four rows containing concatenated records.
@@ -76,7 +76,7 @@ The records were excluded only from the in-memory training dataframe. The origin
 
 After this operation, the cleaned training set contains:
 
-- 2,609 rows;
+- 2,608 rows;
 - 5 columns;
 - exactly 12 target labels.
 

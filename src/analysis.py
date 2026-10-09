@@ -64,16 +64,9 @@ print("\n=== VALORES EM FALTA NO TREINO ===")
 print(train.isna().sum())
 
 
-print("\n=== VALORES EM FALTA NO TESTE ===")
-print(test.isna().sum())
-
-
 print("\n=== PERCENTAGEM EM FALTA NO TREINO ===")
 print((train.isna().mean() * 100).round(2))
 
-
-print("\n=== PERCENTAGEM EM FALTA NO TESTE ===")
-print((test.isna().mean() * 100).round(2))
 
 print("\n=== LINHAS COM PELO MENOS 3 CAMPOS EM FALTA ===")
 

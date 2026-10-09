@@ -1,0 +1,30 @@
+Description-only baseline
+=========================
+
+Random state: 42
+Validation size: 0.2
+Training instances: 2086
+Validation instances: 522
+
+Accuracy: 0.385
+Macro-F1: 0.117
+Minimum per-class F1: Dermatology = 0.000
+
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.448     0.217     0.292        60
+             Dermatology      0.000     0.000     0.000         5
+        Gastroenterology      0.000     0.000     0.000        38
+        General Medicine      0.833     0.244     0.377        41
+               Neurology      0.000     0.000     0.000        36
+            Neurosurgery      0.000     0.000     0.000        15
+   Obstetrics-Gynecology      0.000     0.000     0.000        27
+           Ophthalmology      0.000     0.000     0.000        14
+              Orthopedic      0.438     0.119     0.187        59
+   Psychiatry-Psychology      0.000     0.000     0.000         8
+               Radiology      0.000     0.000     0.000        44
+                 Surgery      0.384     0.977     0.552       175
+
+                accuracy                          0.385       522
+               macro avg      0.175     0.130     0.117       522
+            weighted avg      0.295     0.385     0.269       522

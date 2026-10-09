@@ -1,0 +1,523 @@
+,description,sample_name,correct_label,predicted_label,is_correct
+1571, MRI cervical spine.,MRI Cervical Spine - 1,Radiology,Orthopedic,False
+1878, EGD with dilation for dysphagia., EGD with Dilation ,Surgery,Surgery,True
+1797," Repair of entropion, left upper lid, with excision of anterior lamella and cryotherapy.  Repairs of blepharon, entropion, right lower lid with mucous membrane graft.", Blepharon & Entropion Repair ,Surgery,Surgery,True
+621, An example/template for a routine normal male ROS.,Normal Male ROS Template - 1,General Medicine,General Medicine,True
+2401," Left heart catheterization, bilateral selective coronary angiography, left ventriculography, and right heart catheterization.  Positive nuclear stress test involving reversible ischemia of the lateral wall and the anterior wall consistent with left anterior descending artery lesion.", Angiography & Catheterization ,Surgery,Surgery,True
+2556,"Phacoemulsification with IOL, right eye.  Cataract, right eye.  A lid speculum was placed in the right eye after which a supersharp was used to make a stab incision at the 4 o'clock position through which 2% preservative-free Xylocaine was injected followed by Viscoat.",Phacoemulsification & Lens Implantation - 5,Surgery,Surgery,True
+1159,Extracapsular cataract extraction with posterior chamber intraocular lens placement by phacoemulsification.  A peribulbar block was given to the eye using 8 cc of a mixture of 0.5% Marcaine without epinephrine mixed with Wydase plus one-half of 2% lidocaine without epinephrine.,Cataract Extraction - 1,Ophthalmology,Surgery,False
+454, Esophagogastroduodenoscopy.   The Olympus video gastroscope was then introduced into the upper esophagus and passed by direct vision to the descending duodenum.,Esophagogastroduodenoscopy - 6,Gastroenterology,Surgery,False
+1130, Normal cataract surgery.  , Cataract Surgery ,Ophthalmology,Surgery,False
+386,Patient presents to the emergency room with complaints of mid-epigastric and right upper quadrant abdominal pain for the last 14 days., ER Report - Stomach Pain ,Gastroenterology,Surgery,False
+149, PICC line insertion, PICC line insertion ,Cardiovascular-Pulmonary,Surgery,False
+1480,"This is a 69-year-old white woman with Huntington disease, who presents with the third suicide attempt in the past two months.", Huntington's Disease - Consult ,Psychiatry-Psychology,Surgery,False
+1091," Nonpalpable neoplasm, right breast.  Needle localized wide excision of nonpalpable neoplasm, right breast.", Needle Localized Excision - Breast Neoplasm ,Obstetrics-Gynecology,Surgery,False
+1500, Admission Psychiatric Evaluation,Psychiatric Evaluation - 4,Psychiatry-Psychology,Surgery,False
+1310," Right ulnar nerve transposition, right carpal tunnel release, and right excision of olecranon bursa.  Right cubital tunnel syndrom, carpal tunnel syndrome, and olecranon bursitis.", Ulnar Nerve Transposition & Olecranon Bursa Excision ,Orthopedic,Surgery,False
+2332, Permacath placement - renal failure., Permacath Placement ,Surgery,Surgery,True
+888," Acute left subdural hematoma.  Left frontal temporal craniotomy for evacuation of acute subdural hematoma.  CT imaging reveals an acute left subdural hematoma, which is hemispheric.",Craniotomy - Frontotemporal - 1,Neurology,Surgery,False
+376, Esophagogastroduodenoscopy performed in the emergency department.,Esophagogastroduodenoscopy - 13,Gastroenterology,Surgery,False
+506, Esophagogastroduodenoscopy and colonoscopy with biopsy and polypectomy.,Esophagogastroduodenoscopy - 3,Gastroenterology,Surgery,False
+810, Lumbar puncture with moderate sedation.,Lumbar Puncture - 1,Neurology,Surgery,False
+189, Sample of Pulmonary Function Test,Pulmonary Function Test - 4,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+1414, Consultation for wrist pain., Wrist Pain ,Orthopedic,Surgery,False
+2403, Hardware removal in the left elbow., Hardware Removal - Elbow ,Surgery,Surgery,True
+1784," Right frontotemporal craniotomy and evacuation of hematoma, biopsy of membranes, microtechniques.", Craniotomy - Frontotemporal  ,Surgery,Surgery,True
+1119,"Bilateral rectus recession with the microscopic control, 8 mm, both eyes.", Rectus Recession ,Ophthalmology,Surgery,False
+2330, Exploratory laparotomy and right salpingectomy., Laparotomy & Salpingectomy ,Surgery,Surgery,True
+1939,External cephalic version.  A 39-week intrauterine pregnancy with complete breech presentation., External Cephalic Version ,Surgery,Surgery,True
+699, Sample female physical exam,Female Physical Exam - 1,General Medicine,General Medicine,True
+336," Patient status post gastric bypass surgery, developed nausea and right upper quadrant pain.", Admission History & Physical - Nausea ,Gastroenterology,Surgery,False
+2475," Application of PMT large halo crown and vest.  Cervical spondylosis, status post complex anterior cervical discectomy, corpectomy, decompression and fusion.", PMT Halo Crown & Vest ,Surgery,Surgery,True
+571,A 47-year-old white female presents with concern about possible spider bite to the left side of her neck., Possible Spider Bite ,General Medicine,Surgery,False
+1246,"Delayed open reduction internal fixation with plates and screws, 6-hole contoured distal fibular plate and screws reducing posterolateral malleolar fragment as well as medial malleolar fragment.", Delayed ORIF ,Orthopedic,Surgery,False
+2259, Chest tube insertion done by two physicians in ER - spontaneous pneumothorax secondary to barometric trauma., Chest Tube Insertion in ER ,Surgery,Surgery,True
+1475," The patient has a manic disorder, is presently psychotic with flight of ideas, tangential speech, rapid pressured speech and behavior, impulsive behavior.   Bipolar affective disorder, manic state.  Rule out depression.", Bipolar Affective Disorder - Consult ,Psychiatry-Psychology,Surgery,False
+2464,"Cystoscopy, transurethral resection of medium bladder tumor (4.0 cm in diameter), and direct bladder biopsy.", TURBT ,Surgery,Surgery,True
+1557, X-RAY of the soft tissues of the neck., X-RAY - Neck Soft Tissues ,Radiology,Surgery,False
+2419," Arthroscopic rotator cuff repair, arthroscopic subacromial decompression, and arthroscopic extensive debridement, superior labrum anterior and posterior tear.",Arthroscopic Rotator Cuff Repair - 2,Surgery,Surgery,True
+609," Pressure decubitus, right hip", Pressure decubitus ,General Medicine,Surgery,False
+2606,"Release of A1 pulley, right thumb.   Stenosing tendinosis, right thumb (trigger finger).  There was noted to be thickening of the A1 pulley.  There was a fibrous nodule noted within the flexor tendon of the thumb, which caused triggering sensation to the thumb.",Release of A1 Pulley - 1,Surgery,Surgery,True
+2042, Acute appendicitis with perforation.  Laparoscopic appendectomy.   A CT scan of abdomen showed evidence of appendicitis with perforation. ,Laparoscopic Appendectomy - 4,Surgery,Surgery,True
+1197,"A 7-year-old white male started to complain of pain in his fingers, elbows, and neck.  This patient may have had reactive arthritis.", Pediatric Rheumatology Consult ,Orthopedic,Surgery,False
+13,"Congestive heart failure (CHF).  The patient is a 75-year-old gentleman presented through the emergency room.  Symptoms are of shortness of breath, fatigue, and tiredness.  Main complaints are right-sided and abdominal pain.  Initial blood test in the emergency room showed elevated BNP suggestive of congestive heart failure.", Consult - Congestive Heart Failure ,Cardiovascular-Pulmonary,Surgery,False
+2110,"Evacuation of epidural hematoma and insertion of epidural drain.   Epidural hematoma, cervical spine.  Status post cervical laminectomy, C3 through C7 postop day #10.  Central cord syndrome and acute quadriplegia.", Epidural Hematoma Evacuation ,Surgery,Surgery,True
+2294," Elevated BNP.  Diastolic heart failure, not contributing to his present problem. Chest x-ray and CAT scan shows possible pneumonia.  The patient denies any prior history of coronary artery disease but has a history of hypertension.", Elevated BNP - Consult ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+252," Left heart catheterization, coronary angiography, left ventriculography.  Severe complex left anterior descending and distal circumflex disease with borderline, probably moderate narrowing of a large obtuse marginal branch.","Heart Catheterization, Ventriculography, & Angiography - 7",Cardiovascular-Pulmonary,Surgery,False
+1076," Cesarean Section.  An incision was made as noted above in the findings and carried down through the subcutaneous tissue, muscular fascia and peritoneum. ", Cesarean Section ,Obstetrics-Gynecology,Surgery,False
+2093, Right hip osteoarthritis.  Total hip replacement on the right side., Total Hip Replacement  ,Surgery,Surgery,True
+169, A patient with non-Q-wave myocardial infarction.  No definite chest pains.  The patient is breathing okay.  The patient denies orthopnea or PND., Non-Q-wave Myocardial Infarction ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+928," Acute left subdural hematoma.  Left frontal temporal craniotomy for evacuation of acute subdural hematoma.  CT imaging reveals an acute left subdural hematoma, which is hemispheric.",Craniotomy - Frontotemporal - 1,Neurosurgery,Surgery,False
+1292, MRI of lumbar spine without contrast to evaluate chronic back pain., MRI of Lumbar Spine w/o Contrast ,Orthopedic,Orthopedic,True
+1293, Non-healing surgical wound to the left posterior thigh. Several multiple areas of hypergranulation tissue on the left posterior leg associated with a sense of trauma to his right posterior leg., Hypergranulation - Consult ,Orthopedic,Surgery,False
+772, Cerebral Angiogram - Lateral medullary syndrome secondary to left vertebral artery dissection., Cerebral Angiogram - Lateral Medullary Syndrome ,Neurology,Surgery,False
+2045,"Colonoscopy to cecum with snare polypectomy and esophagogastroduodenoscopy with biopsies.  Hematochezia, refractory dyspepsia, colonic polyps at 35 cm and 15 cm, diverticulosis coli, and acute and chronic gastritis.", Colonoscopy & Esophagogastroduodenoscopy ,Surgery,Surgery,True
+653,"Reason for ICU followup today is acute anemia secondary to upper GI bleeding with melena with dropping hemoglobin from 11 to 8, status post transfusion of 2 units PRBCs with EGD performed earlier today by Dr. X of Gastroenterology confirming diagnosis of ulcerative esophagitis, also for continuing chronic obstructive pulmonary disease exacerbation with productive cough, infection and shortness of breath.", Melena - ICU Followup ,General Medicine,Surgery,False
+2407, Laparoscopic tubal fulguration., Tubal Fulguration - Laparoscopic  ,Surgery,Surgery,True
+1688,A 51-year-old female with left shoulder pain and restricted external rotation and abduction x 6 months.,MRI Shoulder - 2,Radiology,Surgery,False
+1712," MRI L-spine - History of progressive lower extremity weakness, right frontal glioblastoma with lumbar subarachnoid seeding.", MRI L-Spine - Subarachnoid Seeding ,Radiology,Neurology,False
+1025,"Intrauterine pregnancy at 37 plus weeks, nonreassuring fetal heart rate.",Low-Transverse C-Section - 2,Obstetrics-Gynecology,Surgery,False
+1887,"Selective coronary angiography, left heart catheterization with hemodynamics, LV gram with power injection, right femoral artery angiogram, closure of the right femoral artery using 6-French AngioSeal.", Coronary Angiography ,Surgery,Surgery,True
+1276,"A 49-year-old female with ankle pain times one month, without a specific injury.",MRI Foot - 3,Orthopedic,Surgery,False
+593," Congestion, tactile temperature.",Congestion - 21-day-old,General Medicine,Surgery,False
+968,Microscopic assisted lumbar laminotomy with discectomy at L5-S1 on the left.  Herniated nucleus pulposus of L5-S1 on the left., Lumbar Laminotomy & Discectomy ,Neurosurgery,Surgery,False
+418,"The patient has had abdominal pain associated with a 30-pound weight loss and then developed jaundice.  He had epigastric pain and was admitted to the hospital.  A thin-slice CT scan was performed, which revealed a pancreatic mass with involved lymph nodes and ring enhancing lesions consistent with liver metastases.", Pancreatic Mass - Discharge Summary ,Gastroenterology,Surgery,False
+2467," Nasal septal reconstruction, bilateral submucous resection of the inferior turbinates, and bilateral outfracture of the inferior turbinates.  Chronic nasal obstruction secondary to deviated nasal septum and inferior turbinate hypertrophy.", Nasal Septal Reconstruction ,Surgery,Surgery,True
+1344," Bunionectomy, SCARF type, with metatarsal osteotomy and internal screw fixation, left and arthroplasty left second toe.  Bunion left foot and hammertoe, left second toe.", Bunionectomy & Metatarsal Osteotomy ,Orthopedic,Surgery,False
+2266,"Austin-Moore bipolar hemiarthroplasty, left hip utilizing a medium fenestrated femoral stem with a medium 0.8 mm femoral head, a 50 mm bipolar cup.  Displace subcapital fracture, left hip.", Austin-Moore Bipolar Hemiarthroplasty ,Surgery,Orthopedic,False
+21, Patient with a previous history of working in the coalmine and significant exposure to silica with resultant pneumoconiosis and fibrosis of the lung. , Pneumoconiosis ,Cardiovascular-Pulmonary,Surgery,False
+1154," Cataract, right eye.  Phacoemulsification with intraocular lens placement, right eye.",Phacoemulsification & Lens Implantation - 3,Ophthalmology,Surgery,False
+2458," Umbilical hernia repair. A standard curvilinear umbilical incision was made, and dissection was carried down to the hernia sac using a combination of Metzenbaum scissors and Bovie electrocautery.  ",Umbilical Hernia Repair - 1,Surgery,Surgery,True
+848," Patient reports a rotational sensation upon arising from the bed or chair that lasts for several minutes and requires her to sit back down and stay in one place.  She gets similar symptoms when she rolls over in bed.  At times, she also feels as though she is going to pass out.  These sensations stop if she just sits in one place or lies down for several minutes.", Dizziness - Recurrent ,Neurology,Surgery,False
+2190," Cataract, right eye.  Phacoemulsification with intraocular lens insertion, right eye.  A wire lid speculum was inserted to keep the eye open and the eye rotated downward.",Phacoemulsification & Cataract Extraction - 3,Surgery,Surgery,True
+762,"Cerebral palsy, worsening seizures.  A pleasant 43-year-old female with past medical history of CP since birth, seizure disorder, complex partial seizure with secondary generalization and on top of generalized epilepsy, hypertension, dyslipidemia, and obesity.",Consult - Seizures - 1,Neurology,Surgery,False
+1373," Total hip replacement.  An incision was made, centered over the greater trochanter.  Dissection was sharply carried down through the subcutaneous tissues. ",Total Hip Replacement - 1,Orthopedic,Surgery,False
+1375," Achilles tendon rupture, left lower extremity.  Primary repair left Achilles tendon.  The patient was stepping off a hilo at work when he felt a sudden pop in the posterior aspect of his left leg.  The patient was placed in posterior splint and followed up at ABC orthopedics for further care.", Achilles Tendon Repair ,Orthopedic,Surgery,False
+133," Patient with chest pains, CAD, and cardiomyopathy.", Cardiac Radionuclide Stress Test ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+435, Laparoscopic appendectomy.  Acute appendicitis., Appendectomy Laparoscopic ,Gastroenterology,Surgery,False
+1727, Laparoscopic resection of cecal polyp.  Local anesthetic was infiltrated into the right upper quadrant where a small incision was made.  Blunt dissection was carried down to the fascia which was grasped with Kocher clamps.  , Cecal Polyp Resection ,Surgery,Surgery,True
+719, Encephalopathy related to normal-pressure hydrocephalus., Encephalopathy  - Rehab Consult  ,Neurology,Surgery,False
+1513,A 62-year-old male with a history of ischemic cardiomyopathy and implanted defibrillator.,Coronary CT Angiography (CCTA) - 5,Radiology,Surgery,False
+276,"The patient is admitted for shortness of breath, continues to do fairly well.  The patient has chronic atrial fibrillation, on anticoagulation, INR of 1.72.  The patient did undergo echocardiogram, which shows aortic stenosis, severe.  The patient does have an outside cardiologist.", SOAP - Shortness of Breath ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+201," Newly diagnosed high-risk acute lymphoblastic leukemia extensive deep vein thrombosis, and pharmacologic thrombolysis following placement of a vena caval filter.", Lymphoblastic Leukemia - Consult ,Cardiovascular-Pulmonary,Surgery,False
+2325," Left heart cath, selective coronary angiography, LV gram, right femoral arteriogram, and Mynx closure device.  Normal stress test.",Heart Catheterization & Angiography - 1,Surgery,Surgery,True
+2222, Laparoscopic supracervical hysterectomy.  A female with a history of severe dysmenorrhea and menorrhagia unimproved with medical management., Laparoscopic Supracervical Hysterectomy.   ,Surgery,Surgery,True
+1267," Diagnostic arthroscopy exam under anesthesia, left shoulder.  Debridement of chondral injury, left shoulder.  Debridement, superior glenoid, left shoulder.  Arthrotomy.  Bankart lesion repair.  Capsular shift, left shoulder (Mitek suture anchors absorbable anchors with nonabsorbable sutures)."," Arthroscopy, Arthrotomy, Bankart lesion repair ",Orthopedic,Surgery,False
+1394," Incision and drainage and removal of foreign body, right foot.  The patient has had previous I&D but continues to have to purulent drainage.  The patient's parents agreed to performing a surgical procedure to further clean the wound.", I&D & Foreign Body Removal ,Orthopedic,Surgery,False
+174, Insertion of subclavian dual-port Port-A-Cath and surgeon-interpreted fluoroscopy.,Port-A-Cath Insertion - 5,Cardiovascular-Pulmonary,Surgery,False
+1341, Persistent left hip pain.  Left hip avascular necrosis.  Discussed the possibility of hip arthrodesis versus hip replacement versus hip resurfacing, Hip Pain ,Orthopedic,Orthopedic,True
+377, Common description of colonoscopy,Colonoscopy Template - 4,Gastroenterology,Surgery,False
+1131, Woman with a history of macular degeneration.  PDT therapy.  Some vision therapy.  Complete refractive work-up., Optometry - Letter ,Ophthalmology,Surgery,False
+833, Patient returns for his first followup after shunt surgery., First Followup - Shunt Surgery ,Neurology,Surgery,False
+2039," Cauterization of epistaxis, left nasal septum.  Fiberoptic nasal laryngoscopy.  Atrophic dry nasal mucosa.  Epistaxis.  Atrophic laryngeal changes secondary to inhaled steroid use.", Cauterization - Epistaxis ,Surgery,Surgery,True
+753," HCT: SAH, Contusion, Skull fracture"," SAH, Contusion, Skull Fracture ",Neurology,Radiology,False
+1670, MRI left knee without contrast.,MRI Knee - 4,Radiology,Orthopedic,False
+1011,"Laparoscopy.  An incision was made in the umbilicus, allowing us to insert a micro-laparoscopic trocar.  We then insufflated the abdomen with approximately 3 liters of carbon dioxide gas and inserted the micro-laparoscopic instrument.",Laparoscopy - 2,Obstetrics-Gynecology,Surgery,False
+446, Colonoscopy.  The Olympus video colonoscope then was introduced into the rectum and passed by directed vision to the cecum and into the terminal ileum. ,Colonoscopy - 12,Gastroenterology,Surgery,False
+1070," Cervical cone biopsy, dilatation & curettage", Cone Biopsy ,Obstetrics-Gynecology,Surgery,False
+546,"Sepsis, possible SBP.  A 53-year-old Hispanic man with diabetes, morbid obesity, hepatitis C, cirrhosis, history of alcohol and cocaine abuse presented in the emergency room for ground-level fall secondary to weak knees.  He complained of bilateral knee pain, but also had other symptoms including hematuria and epigastric pain for at least a month.", Consult - Sepsis ,General Medicine,Surgery,False
+2079,Laparoscopic appendectomy.  The patient is a 42-year-old female who presented with right lower quadrant pain.  She was evaluated and found to have a CT evidence of appendicitis.,Laparoscopic Appendectomy - 5,Surgery,Surgery,True
+91,"The patient is an 84-year-old female presented to emergency room with shortness of breath, fatigue, and tiredness.  Low-grade fever was noted last few weeks.  The patient also has chest pain described as dull aching type in precordial region.  No relation to exertion or activity.  No aggravating or relieving factors.", Pericardial Effusion ,Cardiovascular-Pulmonary,Surgery,False
+578," Palpitations, possibly related to anxiety. Fatigue. Loose stools with some green color and also some nausea.", Gen Med SOAP ,General Medicine,General Medicine,True
+405," Evaluate for retroperitoneal hematoma, the patient has been following, is currently on Coumadin.  CT abdomen without contrast and CT pelvis without contrast.",CT Abdomen & Pelvis - 10,Gastroenterology,Radiology,False
+1932, Lumbar puncture with moderate sedation.,Lumbar Puncture - 1,Surgery,Surgery,True
+620,"An 18-month-old white male here with his mother for complaint of intermittent fever for the past five days. - Allergic rhinitis, fever history, sinusitis resolved, and teething.",Gen Med Consult - 17,General Medicine,General Medicine,True
+1389, Open reduction and internal fixation (ORIF) of right Schatzker III tibial plateau fracture with partial medial meniscectomy., ORIF - Discharge Summary ,Orthopedic,Surgery,False
+2298, MRI Brain and Brainstem - Falling (Multiple System Atrophy), MRI Brain and Brainstem ,Radiology,Neurology,False
+2308," Ethmoidectomy, antrostomy with polyp removal, turbinectomy, and septoplasty.", Endoscopic Sinus Surgery ,Surgery,Surgery,True
+2335, , G-tube placement ,Surgery,Surgery,True
+595,Patient with a past medical history of hypertension for 15 years., Consult - Hypertension ,General Medicine,Surgery,False
+414, Common description of colonoscopy,Colonoscopy Template - 3,Gastroenterology,Surgery,False
+243, Right carotid stenosis and prior cerebrovascular accident. Right carotid endarterectomy with patch angioplasty., Carotid Endarterectomy  ,Cardiovascular-Pulmonary,Surgery,False
+2455,Displaced left subtrochanteric femur fracture.  Intramedullary rod in the left hip using the Synthes trochanteric fixation nail measuring 11 x 130 degrees with an 85-mm helical blade., Intramedullary Rod ,Surgery,Surgery,True
+987, A white female presents for exam and Pap.,Physical Exam and Pap - 1,Obstetrics-Gynecology,Surgery,False
+161," Diagnostic fiberoptic bronchoscopy with biopsies and bronchoalveolar lavage.   Bilateral upper lobe cavitary lung masses.  Airway changes including narrowing of upper lobe segmental bronchi, apical and posterior on the right, and anterior on the left.  There are also changes of inflammation throughout.", Fiberoptic Bronchoscopy ,Cardiovascular-Pulmonary,Surgery,False
+49, Left muscle sparing mini thoracotomy with left upper lobectomy and mediastinal lymph node dissection.  Intercostal nerve block for postoperative pain relief at five levels., Thoracotomy & Lobectomy ,Cardiovascular-Pulmonary,Surgery,False
+1747, Anterior cervical discectomy and removal of herniated disk and osteophytes and decompression of spinal cord and bilateral nerve root decompression.  Harvesting of autologous bone from the vertebral bodies.  Grafting of allograft bone for creation of arthrodesis., Anterior Cervical Discectomy ,Surgery,Surgery,True
+881," A neuropsychological evaluation to assess neuropsychological factors, clarify areas of strength and weakness, and to assist in therapeutic program planning in light of episodes of syncope.",Neuropsychological Evaluation - 2,Neurology,Surgery,False
+1233,"Anterior cervical discectomy and fusions C4-5, C5-6, C6-7 using Bengal cages and Slimlock plate C4 to C7 intraoperative x-ray.  Herniated nucleuses pulposus, C5-6 greater than C6-7, left greater than C4-5 right with left radiculopathy and moderate stenosis C5-6.", Anterior Cervical Discectomy & Fusion - Discharge Summary ,Orthopedic,Surgery,False
+2346,The patient is a 22-year-old woman with a possible ruptured ectopic pregnancy., Diagnostic Laparoscopy ,Surgery,Surgery,True
+1734," Left breast mass and hypertrophic scar of the left breast.  Excision of left breast mass and revision of scar.  The patient is status post left breast biopsy, which showed a fibrocystic disease with now a palpable mass just superior to the previous biopsy site.",Breast Mass Excision - 1,Surgery,Surgery,True
+2117, Esophagogastroduodenoscopy and colonoscopy with biopsy and polypectomy.,Esophagogastroduodenoscopy - 3,Surgery,Surgery,True
+2035, Normal cataract surgery.  , Cataract Surgery ,Surgery,Surgery,True
+1418," Acetabular fracture on the left posterior column/transverse posterior wall variety with an accompanying displaced fracture of the intertrochanteric variety to the left hip.  Osteosynthesis of acetabular fracture on the left, complex variety and total hip replacement.", Osteosynthesis ,Orthopedic,Surgery,False
+637, Initial clinic visit for foreign body in left eye.,Gen Med Consult - 2,General Medicine,Surgery,False
+1054," Attempted laparoscopy, open laparoscopy and fulguration of endometrial implant.   Chronic pelvic pain, probably secondary to endometriosis.",Laparoscopy - 3,Obstetrics-Gynecology,Surgery,False
+857,MRI of the brain without contrast to evaluate daily headaches for 6 months in a 57-year-old., MRI of Brain w/o Contrast. ,Neurology,Radiology,False
+1884," Excision dorsal ganglion, right wrist.   The extensor retinaculum was then incised and the extensor tendon was dissected and retracted out of the operative field. ", Dorsal Ganglion - Excision ,Surgery,Surgery,True
+2137," Bassini inguinal herniorrhaphy.  A standard inguinal incision was made, and dissection was carried down to the external oblique aponeurosis using a combination of Metzenbaum scissors and Bovie electrocautery. ",Inguinal Herniorrhaphy - 2,Surgery,Surgery,True
+1950, Port insertion through the right subclavian vein percutaneously under radiological guidance.  Metastatic carcinoma of the bladder and bowel obstruction., Port Insertion ,Surgery,Surgery,True
+241, Thallium stress test for chest pain., Stress Test Thallium ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+800,"Cerebrovascular accident (CVA).  The patient presents to the emergency room after awakening at 2:30 a.m. this morning with trouble swallowing, trouble breathing, and left-sided numbness and weakness.", CVA Consult - ER Visit ,Neurology,Surgery,False
+769, Common CT Head template., CT Head ,Neurology,Surgery,False
+1257, Arthroscopy of the left knee was performed with the anterior cruciate ligament reconstruction.  Removal of loose bodies.  Medial femoral chondroplasty and meniscoplasty., Anterior Cruciate Ligament Reconstruction ,Orthopedic,Surgery,False
+163, Right subclavian triple lumen central line placement, Central Line Placement ,Cardiovascular-Pulmonary,Surgery,False
+1933, Laparoscopic appendectomy and peritoneal toilet and photos.  Pelvic inflammatory disease and periappendicitis., Appendectomy - Laparoscopic  ,Surgery,Surgery,True
+1847, Right carpal tunnel release.,Carpal Tunnel Release - 1,Surgery,Surgery,True
+2114,"Right inguinal hernia.   Right inguinal hernia repair.  The patient is a 4-year-old boy with a right inguinal bulge, which comes and goes with Valsalva standing and some increased physical activity.",Inguinal Hernia Repair - 6,Surgery,Surgery,True
+2376," Laparoscopic cholecystectomy.  Biliary colic and biliary dyskinesia.  The patient had a workup for her gallbladder, which showed evidence of biliary dyskinesia.",Laparoscopic Cholecystectomy - 10,Surgery,Surgery,True
+2358, Direct current cardioversion.  Successful direct current cardioversion with restoration of sinus rhythm from atrial fibrillation with no immediate complication. , Cardioversion - Direct Current ,Surgery,Surgery,True
+1633," Mammogram, bilateral full-field digital mammography FFDM (patient with positive history of breast cancer).",Full-Field Digital Mammogram (FFDM) - 2,Radiology,Surgery,False
+1040,"Postoperative day #1, total abdominal hysterectomy.  Normal postoperative course.", Total Abdominal Hysterectomy - Followup ,Obstetrics-Gynecology,Surgery,False
+1355," Tailor bunionectomy, right foot, Weil-type with screw fixation.  Hallux abductovalgus deformity and tailor bunion deformity, right foot.", Tailor Bunionectomy with Screw Fixation ,Orthopedic,Surgery,False
+1989," Right heart and left heart catheterization by way of right femoral artery, right femoral vein, and right internal jugular vein.",Cardiac Catheterization - 6,Surgery,Surgery,True
+2434,"Pars plana vitrectomy, pars plana lensectomy, exploration of exit wound, closure of perforating corneal scleral laceration involving uveal tissue, air-fluid exchange, C3F8 gas, and scleral buckling, right eye.", Pars Plana Vitrectomy & Lensectomy ,Surgery,Surgery,True
+2481," Headaches, question of temporal arteritis.  Bilateral temporal artery biopsies.",Temporal Artery Biopsy - 1,Surgery,Surgery,True
+1354, The patient continues to suffer from ongoing neck and lower back pain with no recent radicular complaints., Ortho Office Visit ,Orthopedic,Surgery,False
+919,"A complex closure and debridement of wound.  The patient is a 26-year-old female with a long history of shunt and hydrocephalus presenting with a draining wound in the right upper quadrant, just below the costal margin that was lanced by General Surgery and resolved however, it continued to drain.", Wound Closure & Debridement - Hydrocephalus ,Neurosurgery,Surgery,False
+2299, Insertion of central venous line and arterial line and transesophageal echocardiography probe., Central Venous & Arterial  Line ,Surgery,Surgery,True
+332, Patient with mid-epigastric abdominal pain.  Sonogram revealed gallstones., Consult - Laparoscopic Cholecystectomy  ,Gastroenterology,Surgery,False
+1451," Cervical, lumbosacral, thoracic spine flexion and extension to evaluate back and neck pain.", Radiologic Exam - Spine  ,Orthopedic,Orthopedic,True
+2372," Bunionectomy with distal first metatarsal osteotomy and internal screw fixation, right foot.  Proximal interphalangeal joint arthroplasty, bilateral fifth toes.  Distal interphalangeal joint arthroplasty, bilateral third and fourth toes.   Flexor tenotomy, bilateral third toes.", Bunionectomy & Flexor Tenotomy ,Surgery,Surgery,True
+1556," Ultrasound kidneys/renal for renal failure, neurogenic bladder, status-post cystectomy", Renal Ultrasound ,Radiology,Surgery,False
+2097, Circumcision and release of ventral chordee., Circumcision & Chordee Release ,Surgery,Surgery,True
+838," The patient is with multiple neurologic and nonneurologic symptoms including numbness, gait instability, decreased dexterity of his arms and general fatigue.  His neurological examination is notable for sensory loss in a length-dependent fashion in his feet and legs with scant fasciculations in his calves.", Multiple Neurological Symptoms ,Neurology,Surgery,False
+1426," Patellar tendon and medial and lateral retinaculum repair, right knee.   Patellar tendon retinaculum ruptures, right knee.", Patellar Tendon & Retinaculum Repair ,Orthopedic,Surgery,False
+1736, Laparoscopic bilateral tubal ligation with Falope rings., Tubal Ligation ,Surgery,Surgery,True
+1105,"Primary low transverse cervical cesarean section.  Intrauterine pregnancy at 38 weeks and malpresentation.  A viable male neonate in the left occiput transverse position with Apgars of 9 and 9 at 1 and 5 minutes respectively, weighing 3030 g.  No nuchal cord.  No meconium.  Normal uterus, fallopian tubes, and ovaries.",Low-Transverse C-Section - 5,Obstetrics-Gynecology,Surgery,False
+190, Posterior mediastinal mass with possible neural foraminal involvement (benign nerve sheath tumor by frozen section).  Left thoracotomy with resection of posterior mediastinal mass., Mediastinal Mass Resection ,Cardiovascular-Pulmonary,Surgery,False
+2080," Radical resection of tumor of the scalp, excision of tumor from the skull with debridement of the superficial cortex with diamond bur, and advancement flap closure.", Resection of Tumor of Scalp ,Surgery,Surgery,True
+2436," Plantar flex third metatarsal and talus bunion, right foot.  Third metatarsal osteotomy, talus bunionectomy, and application of short-leg cast, right foot.  Patient has tried conservative methods such as wide shoes and serial debridement and accommodative padding, all of which provided inadequate relief.  At this time she desires to attempt a surgical correction. ",Osteotomy & Bunionectomy - 1,Surgery,Surgery,True
+1321," Patient was referred to Physical Therapy, secondary to low back pain and degenerative disk disease.  The patient states she has had a cauterization of some sort to the nerves in her low back to help alleviate with painful symptoms.  The patient would benefit from skilled physical therapy intervention.", Physical Therapy - Back Pain ,Orthopedic,Surgery,False
+1516, HCT for memory loss and for calcification of basal ganglia (globus pallidi)., HCT - Calcification of Basal Ganglia ,Radiology,Surgery,False
+1569," Myocardial perfusion imaging - patient with history of MI, stents placement, and chest pain.",Myocardial Perfusion Imaging - 1,Radiology,Cardiovascular-Pulmonary,False
+1582,"Dobutamine Stress Echocardiogram.  Chest discomfort, evaluation for coronary artery disease.  Maximal dobutamine stress echocardiogram test achieving more than 85% of age-predicted heart rate.  Negative EKG criteria for ischemia.",Dobutamine Stress Test - 1,Radiology,Cardiovascular-Pulmonary,False
+121,Selective coronary angiography.  Placement of overlapping 3.0 x 18 and 3.0 x 8 mm Xience stents in the proximal right coronary artery.  Abdominal aortography., Coronary Angiography & Abdominal Aortography ,Cardiovascular-Pulmonary,Surgery,False
+1468,MRI Spine - T12-L5 epidural lipoma and thoracic spinal cord infarction vs. transverse myelitis., MRI Spine - Epidural Lipoma ,Orthopedic,Neurology,False
+1214, Revision right total knee arthroplasty.  Right failed total knee arthroplasty., Knee Arthroplasty - Revision ,Orthopedic,Surgery,False
+727,The patient is status post C3-C4 anterior cervical discectomy and fusion.,EMG/Nerve Conduction Study - 5,Neurology,Surgery,False
+716," He awoke one morning and had double vision.  He states when he closed each eye, the double vision dissipated.  The double vision entirely dissipated within one hour.   The next day he woke up and he had double vision again. ", Diplopia ,Neurology,Surgery,False
+1976, Rhabdomyosarcoma of the left orbit.  Left subclavian vein MediPort placement.  Needs chemotherapy., MediPort Placement ,Surgery,Surgery,True
+1234," Arthrotomy, removal humeral head implant, right shoulder.  Repair of torn subscapularis tendon (rotator cuff tendon) acute tear.  Debridement glenohumeral joint.  Biopsy and culturing the right shoulder.", Arthrotomy & Subscapularis Tendon Repair ,Orthopedic,Surgery,False
+1045," Total abdominal hysterectomy (TAH), left salpingo-oophorectomy, lysis of interloop bowel adhesions.  Chronic pelvic pain, endometriosis, prior right salpingo-oophorectomy, history of intrauterine device perforation and exploratory surgery.", TAH & Salpingo-oophorectomy & Lysis of Adhesions ,Obstetrics-Gynecology,Surgery,False
+692," Consult for generalized body aches, cough, nausea, and right-sided abdominal pain for two days - Bronchitis.", Cough & Abdominal Pain ,General Medicine,Surgery,False
+2295, Patient referred for evaluation of tracheostomy tube placement and treatment recommendations., Tracheostomy Tube Consult ,Cardiovascular-Pulmonary,Surgery,False
+1320, Open reduction and internal fixation of left tibia., ORIF - Left Tibia ,Orthopedic,Surgery,False
+2254,Anterior cervical discectomy at C5-6 and placement of artificial disk replacement.  Right C5-C6 herniated nucleus pulposus.,Anterior Cervical Discectomy - 2,Surgery,Surgery,True
+1603, Adenosine with nuclear scan as the patient unable to walk on a treadmill.  Nondiagnostic adenosine stress test.  Normal nuclear myocardial perfusion scan., Adenosine Nuclear Scan ,Radiology,Cardiovascular-Pulmonary,False
+2527, Problems with dysphagia to solids and had food impacted in the lower esophagus.  Upper endoscopy to evaluate the esophagus.,EGD - 1,Surgery,Surgery,True
+521, Fifth disease with sinusitis, Fifth Disease - SOAP ,General Medicine,Surgery,False
+998,"Preeclampsia, status post delivery with Cesarean section with uncontrolled blood pressure.  The patient is a 38-year-old female admitted following a delivery.  The patient had a cesarean section.  Following this, the patient was treated for her blood pressure.  She was sent home and she came back again apparently with uncontrolled blood pressure.", Preeclampsia ,Obstetrics-Gynecology,Surgery,False
+592," Negative for any nausea, vomiting, fevers, chills, or weight loss.",Normal ROS Template - 4,General Medicine,General Medicine,True
+1299," Hardware removal, right ulnar", Hardware Removal - Ulnar ,Orthopedic,Surgery,False
+2534," Biparietal craniotomy, insertion of left lateral ventriculostomy, right suboccipital craniectomy and excision of tumor.", Craniotomy - Biparietal  ,Surgery,Surgery,True
+1877, Common description of colonoscopy,Colonoscopy Template - 3,Surgery,Surgery,True
+1434,"Anterior cervical discectomy and fusion, C2-C3, C3-C4.  Removal of old instrumentation, C4-C5.  Fusion C3-C4 and C2-C3 with instrumentation using ABC plates.",Anterior Cervical Discectomy & Fusion - 1,Orthopedic,Surgery,False
+1071,Her pregnancy is complicated by preterm contractions.  She was on bedrest since her 34th week.  She was admitted here and labor was confirmed with rupture of membranes.,Delivery Note - 6,Obstetrics-Gynecology,Surgery,False
+2573," Left and right coronary system cineangiography, cineangiography of SVG to OM and LIMA to LAD.  Left ventriculogram and aortogram.  Percutaneous intervention of the left circumflex and obtuse marginal branch with plano balloon angioplasty unable to pass stent.", Cineangiography ,Surgery,Surgery,True
+1499, Psychiatric Consultation of patient with altered mental status., Psych Consult - Altered Mental Status ,Psychiatry-Psychology,Surgery,False
+1852,"Esophagogastroduodenoscopy with biopsy, a 1-year-10-month-old with a history of dysphagia to solids.",Esophagogastroduodenoscopy - 1,Surgery,Surgery,True
+1436," Open reduction internal fixation of the left supracondylar, intercondylar distal femur fracture.",ORIF - 3,Orthopedic,Surgery,False
+899, Right pterional craniotomy with obliteration of medial temporal arteriovenous malformation and associated aneurysm and evacuation of frontotemporal intracerebral hematoma., Pterional Craniotomy ,Neurosurgery,Surgery,False
+1771,"Vitreous hemorrhage, right eye.  Vitrectomy, right eye.  A Lancaster lid speculum was applied and the conjunctiva was opened 4 mm posterior to the limbus.", Vitrectomy ,Surgery,Surgery,True
+2182, Fractured right fifth metatarsal.  Open reduction and internal screw fixation right fifth metatarsal.  Application of short leg splint., ORIF - Fifth Metatarsal ,Surgery,Orthopedic,False
+362, Acute cholecystitis.  Laparoscopic cholecystectomy.  The abdominal area was prepped and draped in the usual sterile fashion.  A small skin incision was made below the umbilicus.  It was carried down in the transverse direction on the side of her old incision.  It was carried down to the fascia.,Laparoscopic Cholecystectomy - 4,Gastroenterology,Surgery,False
+1968, Right subclavian Port-a-Cath insertion in a patient with bilateral breast carcinoma. ,Port-A-Cath Insertion - 1,Surgery,Surgery,True
+2152,Delivery was via spontaneous vaginal delivery.  Nuchal cord x1 were tight and reduced.  Infant was DeLee suctioned at perineum.,Delivery Note - 3,Surgery,Surgery,True
+1705, A middle-aged male with increasing memory loss and history of Lyme disease., MRI Brain - Lyme Disease ,Radiology,Surgery,False
+1617, MRI Brain - Right frontal white matter infarct in patient with Anticardiolipin antibody syndrome and SLE., MRI Brain - SLE & Stroke ,Radiology,Neurology,False
+235, Evaluation of airway for possible bacterial infection performed using bronchoalveolar lavage., Bronchoalveolar lavage. ,Cardiovascular-Pulmonary,Surgery,False
+660," Patient with several medical problems - mouth being sore, cough, right shoulder pain, and neck pain",Gen Med SOAP - 6,General Medicine,Surgery,False
+50,"Diagnostic bronchoscopy and limited left thoracotomy with partial pulmonary decortication and insertion of chest tubes x2.  Bilateral bronchopneumonia and empyema of the chest, left.", Bronchoscopy & Thoracotomy ,Cardiovascular-Pulmonary,Surgery,False
+449," Chronic abdominal pain and heme positive stool, antral gastritis, and duodenal polyp.  Esophagogastroduodenoscopy with photos and antral biopsy.",Esophagogastroduodenoscopy - 8,Gastroenterology,Surgery,False
+1408, CT of Lumbar Spine without Contrast.  Patient with history of back pain after a fall., CT of Lumbar Spine w/o Contrast ,Orthopedic,Radiology,False
+754, Falls at home.  Anxiety and depression.  The patient had been increasingly anxious and freely admitted that she was depressed at home., Falls - Discharge Summary ,Neurology,Surgery,False
+2105, Posterior mediastinal mass with possible neural foraminal involvement (benign nerve sheath tumor by frozen section).  Left thoracotomy with resection of posterior mediastinal mass., Mediastinal Mass Resection ,Surgery,Surgery,True
+103, Stress test with Bruce protocol due to chest pain., Stress Test Bruce Protocol ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+1361, Left carpal tunnel release.  Left carpal tunnel syndrome.  Severe compression of the median nerve on the left at the wrist.,Carpal Tunnel Release - 6,Orthopedic,Surgery,False
+2109, Insertion of left femoral circle-C catheter (indwelling catheter).  Chronic renal failure.  The patient was discovered to have a MRSA bacteremia with elevated fever and had tenderness at the anterior chest wall where his Perm-A-Cath was situated., Indwelling Catheter Insertion ,Surgery,Surgery,True
+1109, Sample post dilation patient instructions., Post Dilation Instructions ,Ophthalmology,Surgery,False
+1632, Axial images through the cervical spine with coronal and sagittal reconstructions.,CT C-Spine - 1,Radiology,Orthopedic,False
+1961, Bilateral scrotal orchiectomy, Orchiectomy ,Surgery,Surgery,True
+656," Foreign body of the left fifth fingernail (wooden splinter).  He attempted to remove it with tweezers at home, but was unsuccessful.  He is requesting we attempt to remove this for him.", Foreign Body - Fingernail ,General Medicine,Surgery,False
+80,"Acute on chronic COPD exacerbation and community acquired pneumonia both resolving.  However, she may need home O2 for a short period of time.", COPD & Pneumonia - SOAP ,Cardiovascular-Pulmonary,General Medicine,False
+2413," Right open carpal tunnel release and cortisone injection, left carpal tunnel.",Carpal Tunnel Release - 4,Surgery,Surgery,True
+493," Gastroscopy.  A short-segment Barrett esophagus, hiatal hernia, and incidental fundic gland polyps in the gastric body otherwise, normal upper endoscopy to the transverse duodenum.",Gastroscopy - 3,Gastroenterology,Surgery,False
+608," Multiple problems including left leg swelling, history of leukocytosis, joint pain left shoulder, low back pain, obesity, frequency with urination, and tobacco abuse.",Gen Med Progress Note - 9,General Medicine,Surgery,False
+1225," Subcutaneous ulnar nerve transposition.  A curvilinear incision was made over the medial elbow, starting proximally at the medial intermuscular septum, curving posterior to the medial epicondyle, then curving anteriorly along the path of the ulnar nerve.  Dissection was carried down to the ulnar nerve. ", Ulnar Nerve Transposition ,Orthopedic,Surgery,False
+3, Left lower extremity venous Doppler ultrasound, Lower Extremity Venous Doppler ,Cardiovascular-Pulmonary,Surgery,False
+1658,Cardiolite treadmill exercise stress test.  The patient was exercised on the treadmill to maximum tolerance achieving after 5 minutes a peak heart rate of 137 beats per minute with a workload of 2.3 METS., Cardiolite Treadmill Stress Test ,Radiology,Cardiovascular-Pulmonary,False
+1592,"The patient is a 39-year-old gravida 3, para 2, who is now at 20 weeks and 2 days gestation.  This pregnancy is a twin gestation.  The patient presents for her fetal anatomical survey.", Fetal Anatomical Survey ,Radiology,Surgery,False
+626, A male patient presented for evaluation of chronic abdominal pain.,Gen Med Consult - 34,General Medicine,Surgery,False
+2569, Pacemaker ICD interrogation.  Severe nonischemic cardiomyopathy with prior ventricular tachycardia., Pacemaker Interrogation ,Surgery,Cardiovascular-Pulmonary,False
+71," Left heart catheterization, bilateral selective coronary angiography, left ventriculography, and right heart catheterization.  Positive nuclear stress test involving reversible ischemia of the lateral wall and the anterior wall consistent with left anterior descending artery lesion.", Angiography & Catheterization ,Cardiovascular-Pulmonary,Surgery,False
+1179,"Pars plana vitrectomy, membrane peel, 23-gauge, right eye.",Vitrectomy - 2,Ophthalmology,Surgery,False
+2572, Completion thyroidectomy with limited right paratracheal node dissection., Completion Thyroidectomy ,Surgery,Surgery,True
+296, Patient comes in for initial evaluation of a hyperesthesia on his right abdomen., Hyperesthesia ,Dermatology,Surgery,False
+813, Neurologic consultation was requested to evaluate her seizure medication and lethargy., Neurologic Consultation ,Neurology,Surgery,False
+433, Total colonoscopy and polypectomy,Colonoscopy & Polypectomy - 1,Gastroenterology,Surgery,False
+1402,Left hip fracture.  The patient is a 53-year-old female with probable pathological fracture of the left proximal femur., Hip Fracture - ER Consult ,Orthopedic,Surgery,False
+1464, Decreased ability to perform daily living activities secondary to exacerbation of chronic back pain., Back Pain - Discharge Summary ,Orthopedic,Orthopedic,True
+2076," Placement of Scott cannula, right lateral ventricle", Scott Cannula ,Surgery,Surgery,True
+747, Patient with sudden onset dizziness and RUE clumsiness.  Giant Left MCA Aneurysm., MCA Aneurysm ,Neurology,Surgery,False
+479, Patient presents for a colostomy reversal as well as repair of an incisional hernia. , Consult for Colostomy Reversal ,Gastroenterology,Surgery,False
+934,MRI C-spine: C4-5 Transverse Myelitis., MRI C-spine ,Neurology,Orthopedic,False
+1519, Bilateral carotid ultrasound., Carotid Ultrasound ,Radiology,Surgery,False
+787,Possible cerebrovascular accident.  The EEG was obtained using 21 electrodes placed in scalp-to-scalp and scalp-to-vertex montages., EEG ,Neurology,Surgery,False
+105," Left and right coronary system cineangiography, cineangiography of SVG to OM and LIMA to LAD.  Left ventriculogram and aortogram.  Percutaneous intervention of the left circumflex and obtuse marginal branch with plano balloon angioplasty unable to pass stent.", Cineangiography ,Cardiovascular-Pulmonary,Surgery,False
+1584," Bilateral Mammogram, (abnormal) additional views requested", Bilateral Mammogram ,Radiology,Surgery,False
+2026,"Chronic venous hypertension with painful varicosities, lower extremities, bilaterally.  Greater saphenous vein stripping and stab phlebectomies requiring 10 to 20 incisions, bilaterally.", Vein Stripping ,Surgery,Surgery,True
+2553," Carpal tunnel release.  Nerve conduction study tests diagnostic of carpal tunnel syndrome.  The patient failed to improve satisfactorily on conservative care, including anti-inflammatory medications and night splints.", Carpal Tunnel Release ,Surgery,Surgery,True
+976," Right frontotemporoparietal craniotomy, evacuation of acute subdural hematoma.   Acute subdural hematoma, right, with herniation syndrome.", Frontotemporoparietal Craniotomy ,Neurosurgery,Surgery,False
+2122, Incision and drainage of left neck abscess., I&D - Neck Abscess ,Surgery,Surgery,True
+257," Cardiac Catheterization - An obese female with a family history of coronary disease and history of chest radiation for Hodgkin disease, presents with an acute myocardial infarction with elevated enzymes.",Cardiac Catheterization - 1,Cardiovascular-Pulmonary,Surgery,False
+1072,"Spontaneous vaginal delivery.  Male infant, cephalic presentation, ROA.  Apgars 2 and 7.  Weight 8 pounds and 1 ounce.  Intact placenta.  Three-vessel cord.  Third degree midline tear.",Spontaneous Vaginal Delivery - 1,Obstetrics-Gynecology,Surgery,False
+1817," Torn lateral meniscus and chondromalacia of the patella, right knee.  Arthroscopic lateral meniscoplasty and patellar shaving of the right knee.", Arthroscopic Meniscoplasty ,Surgery,Surgery,True
+1868,Ex-plantation of inflatable penile prosthesis and then placement of second inflatable penile prosthesis AMS700.  Nonfunctioning inflatable penile prosthesis and Peyronie's disease., Penile Prosthesis Replacement ,Surgery,Surgery,True
+54, Pulmonary function test.  Mild-to-moderate obstructive ventilatory impairment.  Some improvement in the airflows after bronchodilator therapy., Pulmonary Function Test ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+532, Sample female review of systems., Female ROS ,General Medicine,Surgery,False
+1842," Incision and drainage of the penoscrotal abscess, packing, penile biopsy, cystoscopy, and urethral dilation.", I&D - Penoscrotal Abscess ,Surgery,Surgery,True
+1723,"Chest pain, shortness of breath and cough, evaluate for pulmonary arterial embolism.   CT angiography chest with contrast.  Axial CT images of the chest were obtained for pulmonary embolism protocol utilizing 100 mL of Isovue-300.", CT Angiography ,Radiology,Cardiovascular-Pulmonary,False
+2530, Transplant nephrectomy after rejection of renal transplant, Nephrectomy - Transplant ,Surgery,Surgery,True
+1841,Her pregnancy is complicated by preterm contractions.  She was on bedrest since her 34th week.  She was admitted here and labor was confirmed with rupture of membranes.,Delivery Note - 6,Surgery,Surgery,True
+1655, Common CT Facial template., CT Facial ,Radiology,Surgery,False
+539," Comprehensive Evaluation - Generalized anxiety and hypertension, both under fair control.",Gen Med Consult - 8,General Medicine,Surgery,False
+1514, Cerebral Angiogram - moyamoya disease., Moyamoya Disease ,Radiology,Neurology,False
+2303,"Coronary bypass graft x2 utilizing left internal mammary artery, the left anterior descending, reverse autogenous reverse autogenous saphenous vein graft to the obtuse marginal.  Total cardiopulmonary bypass, cold-blood potassium cardioplegia, antegrade for myocardial protection.",CABG - 1,Surgery,Surgery,True
+474,"Laparoscopic cholecystectomy.  Acute cholecystitis, status post laparoscopic cholecystectomy, end-stage renal disease on hemodialysis, hyperlipidemia, hypertension, congestive heart failure, skin lymphoma 5 years ago, and hypothyroidism.", Lap Chole - Discharge Summary ,Gastroenterology,Surgery,False
+1630,The patient is status post C3-C4 anterior cervical discectomy and fusion.,EMG/Nerve Conduction Study - 5,Radiology,Surgery,False
+217," A female admitted with jaundice and a pancreatic mass who was noted to have a new murmur, bacteremia, and fever. ", Murmur & Bacteremia. ,Cardiovascular-Pulmonary,Surgery,False
+1831, Patient with dysphagia.,Endoscopy - 3,Surgery,Surgery,True
+507,The patient presented to the emergency room last evening with approximately 7- to 8-day history of abdominal pain which has been persistent., Abdominal Pain - Consult ,Gastroenterology,Surgery,False
+187,2-month-old female - increased work of breathing.,Bronchiolitis - 2-month-old,Cardiovascular-Pulmonary,Surgery,False
+1564, Nuclear cardiac stress report.  Recurrent angina pectoris in a patient with documented ischemic heart disease and underlying ischemic cardiomyopathy., Nuclear Cardiac Stress Report ,Radiology,Cardiovascular-Pulmonary,False
+1809,"Lumbar puncture.  A 20-gauge spinal needle was then inserted into the L3-L4 space.  Attempt was successful on the first try and several mLs of clear, colorless CSF were obtained.",Lumbar Puncture - 2,Surgery,Surgery,True
+151, The patient with atypical type right arm discomfort and neck discomfort.,Cardiac Catheterization - 2,Cardiovascular-Pulmonary,Surgery,False
+2264," Colonoscopy due to rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease.",Colonoscopy - 1,Surgery,Surgery,True
+48," Transesophageal echocardiogram. MRSA bacteremia, rule out endocarditis.  The patient has aortic stenosis.",Transesophageal Echocardiogram - 5,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+2501," Arthroscopy of the left knee with medial meniscoplasty.  Internal derangement, left knee. Displaced bucket-handle tear of medial meniscus, left knee.", Knee Arthroscopy & Medial Meniscoplasty ,Surgery,Surgery,True
+102," Fiberoptic flexible bronchoscopy with lavage, brushings, and endobronchial mucosal biopsies of the right bronchus intermedius/right lower lobe.  Right hyoid mass, rule out carcinomatosis.  Chronic obstructive pulmonary disease.  Changes consistent with acute and chronic bronchitis.", Fiberoptic Flexible Bronchoscopy ,Cardiovascular-Pulmonary,Surgery,False
+1465, Bilateral Crawford subtalar arthrodesis with open Achilles Z-lengthening and bilateral long-leg cast., Arthrodesis ,Orthopedic,Surgery,False
+2349,"Excisional biopsy with primary closure of a 4 mm right lateral base of tongue lesion.  Right lateral base of tongue lesion, probable cancer.", Tongue Lesion Biopsy ,Surgery,Surgery,True
+917, Endoscopic-assisted transsphenoidal exploration and radical excision of pituitary adenoma.  Endoscopic exposure of sphenoid sinus with removal of tissue from within the sinus., Pituitary Adenomectomy ,Neurosurgery,Surgery,False
+1812,"Cystourethroscopy, right retrograde pyelogram, right ureteral pyeloscopy, right renal biopsy, and right double-J 4.5 x 26 mm ureteral stent placement.  Right renal mass and ureteropelvic junction obstruction and hematuria.",Cystourethroscopy & Retrograde Pyelogram - 1,Surgery,Surgery,True
+2348, Laparoscopic cholecystectomy due to chronic cholecystitis and cholelithiasis.,Laparoscopic Cholecystectomy - 2,Surgery,Surgery,True
+1145, Complete eye examination - Normal eye and vision exam., Eye Examination - H&P ,Ophthalmology,Surgery,False
+369, The patient with a recent change in bowel function and hematochezia.,Colonoscopy with Biopsy - 1,Gastroenterology,Surgery,False
+526,"Patient had a piece of glass fall on to his right foot.  A 4-mm laceration.  Acute foot pain, now resolved.   The patient was given discharge instructions on wound care.", Cut on Foot - ER Visit ,General Medicine,Surgery,False
+470," Colonoscopy due to rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease.",Colonoscopy - 1,Gastroenterology,Surgery,False
+1266,"Anterior spine fusion from T11-L3.  Posterior spine fusion from T3-L5.  Posterior spine segmental instrumentation from T3-L5, placement of morcellized autograft and allograft.", Spine Fusion ,Orthopedic,Surgery,False
+214, Bronchoscopy with aspiration and left upper lobectomy.  Carcinoma of the left upper lobe., Bronchoscopy & Lobectomy ,Cardiovascular-Pulmonary,Surgery,False
+1036,"Dilation and evacuation.  12 week incomplete miscarriage.  The patient unlike her visit in the ER approximately 4 hours before had some tissue in the vagina protruding from the os, this was teased out and then a D&E was performed yielding significant amount of central tissue.", Dilation & Evacuation ,Obstetrics-Gynecology,Surgery,False
+2426,"Residual stone status post right percutaneous nephrolithotomy, attempted second-look nephrolithotomy, cysto with insertion of 6-French variable length double-J stent.", Cysto & Double-J Stent Insersion ,Surgery,Surgery,True
+1999, Cosmetic rhinoplasty.  Request for cosmetic change in the external appearance of the nose., Rhinoplasty ,Surgery,Surgery,True
+1460," Carpal tunnel release.  Nerve conduction study tests diagnostic of carpal tunnel syndrome.  The patient failed to improve satisfactorily on conservative care, including anti-inflammatory medications and night splints.", Carpal Tunnel Release ,Orthopedic,Surgery,False
+106," Abnormal echocardiogram findings and followup.  Shortness of breath, congestive heart failure, and valvular insufficiency.   The patient complains of shortness of breath, which is worsening.  The patient underwent an echocardiogram, which shows severe mitral regurgitation and also large pleural effusion.", Abnormal Echocardiogram ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+472, GI Consultation for Chrohn's disease.,GI Consultation - 3,Gastroenterology,Surgery,False
+480, Patient with history of polyps.,Colonoscopy - 9,Gastroenterology,Surgery,False
+53,The patient is a 61-year-old female who was treated with CyberKnife therapy to a right upper lobe stage IA non-small cell lung cancer.  CyberKnife treatment was completed one month ago.  She is now being seen for her first post-CyberKnife treatment visit., CyberKnife Treatment - Followup ,Cardiovascular-Pulmonary,Surgery,False
+1749," Revision septoplasty, repair of internal nasal valve collapse using auricular cartilage, repair of bilateral external nasal valve collapse using auricular cartilage, harvest of right auricular cartilage.", Septoplasty ,Surgery,Surgery,True
+1445, MRI report Cervical Spine (Chiropractic Specific), MRI Cervical Spine - Chiropractic Specific ,Orthopedic,Orthopedic,True
+2172,"Selective coronary angiography of the right coronary artery, left main LAD, left circumflex artery, left ventricular catheterization, left ventricular angiography, angioplasty of totally occluded mid RCA, arthrectomy using 6-French catheter, stenting of the mid RCA, stenting of the proximal RCA, femoral angiography and Perclose hemostasis.",Angiography & Catheterization - 1,Surgery,Surgery,True
+1490, She was admitted following an overdose of citalopram and warfarin.  The patient has had increasing depression and has been under stress as a result of dissolution of her second marriage.,Psychiatric Consult - 2,Psychiatry-Psychology,Surgery,False
+1148, Blepharoplasty procedure, Blepharoplasty ,Ophthalmology,Surgery,False
+2242," Juxtaductal coarctation of the aorta, dilated cardiomyopathy, bicuspid aortic valve, patent foramen ovale.", Coarctation of Aorta ,Surgery,Cardiovascular-Pulmonary,False
+2059," Phenol neurolysis right obturator nerve, botulinum toxin injection right rectus femoris and vastus medialis intermedius and right pectoralis major muscles.",Phenol Neurolysis & Botulinum Toxin Injection - 2,Surgery,Surgery,True
+337," Colonoscopy - Diarrhea, suspected irritable bowel",Colonoscopy - 4,Gastroenterology,Surgery,False
+1521," Dobutamine stress test for chest pain, as the patient was unable to walk on a treadmill, and allergic to adenosine.  Nondiagnostic dobutamine stress test.   Normal nuclear myocardial perfusion scan.", Dobutamine Stress Test ,Radiology,Cardiovascular-Pulmonary,False
+2432, Modified radical mastectomy.  An elliptical incision was made to incorporate the nipple-areolar complex and the previous biopsy site.  The skin incision was carried down to the subcutaneous fat but no further. ,Radical Mastectomy - 1,Surgery,Surgery,True
+528," Consult for hypertension and a med check.  History of osteoarthritis, osteoporosis, hypothyroidism, allergic rhinitis and kidney stones.",Gen Med Consult - 13,General Medicine,General Medicine,True
+1129, Endoscopic subperiosteal midface lift using the endotine midface suspension device.  Transconjunctival lower lid blepharoplasty with removal of a portion of the medial and middle fat pad., Midface Lift & Blepharoplasty ,Ophthalmology,Surgery,False
+1673,2-D Echocardiogram,2-D Echocardiogram - 2,Radiology,Cardiovascular-Pulmonary,False
+1117,"  Cataract, nuclear sclerotic, right eye.  Phacoemulsification with intraocular lens implantation, right eye.", Phacoemulsification & Lens Implantation ,Ophthalmology,Surgery,False
+1620, Transesophageal echocardiographic examination report.   Aortic valve replacement.  Assessment of stenotic valve.  Evaluation for thrombus on the valve.,Transesophageal Echocardiogram - 3,Radiology,Cardiovascular-Pulmonary,False
+1094, Laparoscopic supracervical hysterectomy.  A female with a history of severe dysmenorrhea and menorrhagia unimproved with medical management., Laparoscopic Supracervical Hysterectomy.   ,Obstetrics-Gynecology,Surgery,False
+793," CT head without contrast, CT facial bones without contrast, and CT cervical spine without contrast."," CT Head, Facial Bones, Cervical Spine ",Neurology,Radiology,False
+933, Laparoscopic cholecystectomy.,Laparoscopic Cholecystectomy - 1,Gastroenterology,Surgery,False
+2595, Left temporal craniotomy and removal of brain tumor., Craniotomy - Temporal ,Surgery,Surgery,True
+343,"Cholelithiasis possible choledocholithiasis.  Laparoscopic cholecystectomy and intraoperative cholangiogram.  A small incision was made in the umbilicus, and a Veress needle was introduced into the abdomen.  CO2 insufflation was done to a maximum pressure of 15 mmHg, and a 12-mm VersaStep port was placed into the umbilicus.",Laparoscopic Cholecystectomy - 6,Gastroenterology,Surgery,False
+1085," Mammogram, bilateral full-field digital mammography FFDM (patient with positive history of breast cancer).",Full-Field Digital Mammogram (FFDM) - 2,Obstetrics-Gynecology,Surgery,False
+898,Anterior cervical discectomy with spinal cord and spinal canal decompression and Anterior interbody fusion at C5-C6 utilizing Bengal cage.,Anterior Cervical Discectomy & Interbody Fusion - 2,Neurosurgery,Surgery,False
+2276, Placement of a Port-A-Cath under fluoroscopic guidancein a patient with anal cancer.,Port-A-Cath Insertion - 2,Surgery,Surgery,True
+2251, Incision and drainage with bolster dressing placement of right ear recurrent auricular hematoma., I&D - Auricular Hematoma ,Surgery,Surgery,True
+191," Patient with a history of atrial fibrillation in the past, more recently who has had atrial flutter.  The patient has noted some lightheadedness as well as chest discomfort and shortness of breath when atrial flutter recurred.", Cardiac Consult & Cardioversion ,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+220," Bronchoscopy, right upper lobe biopsies and right upper lobe bronchial washing as well as precarinal transbronchial needle aspiration.",Bronchoscopy - 1,Cardiovascular-Pulmonary,Surgery,False
+2470," Closure of bladder laceration, during cesarean section.", Bladder Laceration Closure ,Surgery,Surgery,True
+661, Most commonly used phrases in physical exam.,Normal Physical Exam Template - 7,General Medicine,Surgery,False
+649, Gastroenteritis and autism.  She developed constipation one week prior to admission and mother gave her MiraLax and her constipation improved. ,Discharge Summary - 15,General Medicine,General Medicine,True
+614, An example/template for a routine normal female physical exam.,Normal Female Exam Template - 1,General Medicine,General Medicine,True
+2430,Degenerative disk disease at L4-L5 and L5-S1.  Anterior exposure diskectomy and fusion at L4-L5 and L5-S1., Diskectomy & Fusion ,Surgery,Surgery,True
+1587, Pain and swelling in the right foot.,MRI Foot - 2,Radiology,Surgery,False
+2186, Left retrosigmoid craniotomy and excision of acoustic neuroma., Craniotomy - Retrosigmoid  ,Surgery,Surgery,True
+249,"Cerebrovascular accident (CVA) with right arm weakness and MRI indicating acute/subacute infarct involving the left posterior parietal lobe without mass effect.  2.  Old coronary infarct, anterior aspect of the right external capsule.  Acute bronchitis with reactive airway disease.", CVA - Discharge Summary ,Cardiovascular-Pulmonary,Surgery,False
+818, Right frontal craniotomy with resection of right medial frontal brain tumor.  Stereotactic image-guided neuronavigation and  microdissection and micro-magnification for resection of brain tumor., Craniotomy & Neuronavigation ,Neurology,Surgery,False
+781, Chest CT - Thymoma and history of ocular myasthenia gravis., Chest CT - Myasthenia Gravis ,Neurology,Surgery,False
+1811,"  Rotator cuff tear, right shoulder.  Superior labrum anterior and posterior lesion (peel-back), right shoulder.  Arthroscopy with arthroscopic SLAP lesion.  Repair of soft tissue subacromial decompression rotator cuff repair, right shoulder.", Arthroscopic SLAP lesion ,Surgery,Surgery,True
+2384, Right distal both-bone forearm fracture.  Closed reduction under conscious sedation and application of a splint was warranted.,Closed Reduction - 1,Surgery,Surgery,True
+166," Left Cardiac Catheterization, Left Ventriculography, Coronary Angiography and Stent Placement.", Cardiac Cath & Coronary Angiography ,Cardiovascular-Pulmonary,Surgery,False
+1211," MRI L-spine - History of progressive lower extremity weakness, right frontal glioblastoma with lumbar subarachnoid seeding.", MRI L-Spine - Subarachnoid Seeding ,Orthopedic,Neurology,False
+1813, Primary low segment cesarean section., Low -Segment C-Section ,Surgery,Surgery,True
+2542, Desires permanent sterilization.  Laparoscopic bilateral tubal occlusion with Hulka clips., Bilateral Tubal Occlusion - Laparoscopic ,Surgery,Surgery,True
+1390," Arthroscopy with arthroscopic rotator cuff debridement, anterior acromioplasty, and Mumford procedure left shoulder.  Partial rotator cuff tear with impingement syndrome.  Degenerative osteoarthritis of acromioclavicular joint, left shoulder, rule out slap lesion.", Mumford Procedure & Acromioplasty ,Orthopedic,Surgery,False
+1515, Dobutamine stress test for atrial fibrillation., Stress Test Dobutamine ,Radiology,Cardiovascular-Pulmonary,False
+1,"The patient is 14 months old, comes in with a chief complaint of difficulty breathing.", Difficulty Breathing - ER Visit  ,Cardiovascular-Pulmonary,Surgery,False
+344, Flexible sigmoidoscopy due to rectal bleeding.,Flex Sig - 1,Gastroenterology,Surgery,False
+423," A woman referred for colonoscopy secondary to heme-positive stools.  Procedure done to rule out generalized diverticular change, colitis, and neoplasia.", Colonoscopy with Biopsy ,Gastroenterology,Surgery,False
+954, Left temporal craniotomy and removal of brain tumor., Craniotomy - Temporal ,Neurosurgery,Surgery,False
+2157, Laparoscopic right partial nephrectomy due to right renal mass., Nephrectomy - Partial (Laparoscopic ) ,Surgery,Surgery,True
+522," Patient running to catch a taxi and stumbled, fell and struck his face on the sidewalk.", Fall & Laceration ,General Medicine,Surgery,False
+2013," White male with onset of chest pain, with history of on and off chest discomfort over the past several days.",Cardiac Catheterization - 3,Surgery,Surgery,True
+1996, Orchiopexy & inguinal herniorrhaphy., Orchiopexy & Herniorrhaphy ,Surgery,Surgery,True
+34," Patient felt dizzy, had some cold sweats, mild shortness of breath, no chest pain, no nausea or vomiting, but mild diarrhea, and sat down and lost consciousness for a few seconds.", Pulmonary Embolism ,Cardiovascular-Pulmonary,General Medicine,False
+714, Complaint of mood swings and tearfulness.,Gen Med Consult - 15,General Medicine,Surgery,False
+1471, Psychosocial donor evaluation.  Following questions are mostly involved in a psychosocial donor evaluation.,Psychosocial Eval - Donor - 1,Psychiatry-Psychology,Surgery,False
+2128," Left heart catheterization with ventriculography, selective coronary arteriographies, successful stenting of the left anterior descending diagonal.","Heart Catheterization, Ventriculography, & Angiography - 2",Surgery,Surgery,True
+2030, Patient with complaint of a very painful left foot because of the lesions on the bottom of the foot. , Foot Lesions ,Surgery,Surgery,True
+160," Reduced exercise capacity for age, no chest pain with exercise, no significant ST segment changes with exercise, symptoms of left anterior chest pain were not provoked with exercise, and hypertensive response noted with exercise.",Exercise Stress Test - 2,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+1818, Anterior cranial vault reconstruction with fronto-orbital bar advancement., Cranial Vault Reconstruction ,Surgery,Surgery,True
+537, Intractable nausea and vomiting/history of diabetic gastroparesis/multiple endoscopies revealing gastritis and esophagitis. , H&P - Nausea & Vomiting ,General Medicine,Surgery,False
+686, Followup after a full-night sleep study performed to evaluate her for daytime fatigue and insomnia.  This patient presents with history of sleep disruption and daytime sleepiness with fatigue.  Her symptoms are multifactorial., Sleep Study Followup ,General Medicine,Surgery,False
+373, Pediatric Gastroenterology - Rectal Bleeding Consult.,Rectal Bleeding - 1-year-old,Gastroenterology,Surgery,False
+985," Diagnostic mammogram, full-field digital, ultrasound of the breast and mammotome core biopsy of the left breast.", Breast Ultrasound & Biopsy ,Obstetrics-Gynecology,Surgery,False
+1392,"  Rotator cuff tear, right shoulder.  Superior labrum anterior and posterior lesion (peel-back), right shoulder.  Arthroscopy with arthroscopic SLAP lesion.  Repair of soft tissue subacromial decompression rotator cuff repair, right shoulder.", Arthroscopic SLAP lesion ,Orthopedic,Surgery,False
+1026,"Sterilization candidate.  Cervical dilatation and laparoscopic bilateral partial salpingectomy.  A 30-year-old female gravida 4, para-3-0-1-3 who desires permanent sterilization.", Salpingectomy & Cervical Dilatation ,Obstetrics-Gynecology,Surgery,False
+1827,Appendicitis.  Laparoscopic appendectomy.   CO2 insufflation was done to a maximum pressure of 15 mmHg and a 12-mm VersaStep port was placed through his umbilicus.,Laparoscopic Appendectomy - 3,Surgery,Surgery,True
+2486,Squamous cell carcinoma of right temporal bone/middle ear space.  Right temporal bone resection rectus abdominis myocutaneous free flap for reconstruction of skull base defect right selective neck dissection zones 2 and 3., Skull Base Reconstruction ,Surgery,Surgery,True
+952," Right frontotemporal craniotomy and evacuation of hematoma, biopsy of membranes, microtechniques.", Craniotomy - Frontotemporal  ,Neurosurgery,Surgery,False
+1230, Anterior cervical discectomy with decompression of spinal cord.  Anterior cervical fusion.  Anterior cervical instrumentation.  Insertion of intervertebral device.  Use of operating microscope.,Anterior Cervical Discectomy & Fusion - 6,Orthopedic,Surgery,False
+1567, MRI report Cervical Spine (Chiropractic Specific), MRI Cervical Spine - Chiropractic Specific ,Radiology,Orthopedic,False
+315," The skin biopsy was performed on the right ankle and right thigh.  The patient was consented for skin biopsy.  The complications, instructions as to how the procedure will be performed, and postoperative instructions were given to the patient. ", Skin Biopsy ,Dermatology,Surgery,False
+1702, MRI Brain & T-spine - Demyelinating disease., MRI Brain & T-spine - Demyelinating disease. ,Radiology,Neurology,False
+1815," Left heart catheterization, left ventriculography, selective coronary angiography.","Heart Catheterization, Ventriculography, & Angiography - 9",Surgery,Surgery,True
+1828," Excision of abscess, removal of foreign body.  Repair of incisional hernia.  Recurrent re-infected sebaceous cyst of abdomen.  Abscess secondary to retained foreign body and incisional hernia.", Abscess Excision ,Surgery,Surgery,True
+1598,MRI Spine - T12-L5 epidural lipoma and thoracic spinal cord infarction vs. transverse myelitis., MRI Spine - Epidural Lipoma ,Radiology,Neurology,False
+270,Endotracheal intubation.  The patient was intubated secondary to respiratory distress and increased work of breathing and falling saturation on 15 liters nonrebreather.  PCO2 was 29 and pO2 was 66 on the 15 liters.,Endotracheal Intubation - 1,Cardiovascular-Pulmonary,Surgery,False
+2427," Empyema.  Right thoracotomy, total decortication and intraoperative bronchoscopy.  A thoracostomy tube was placed at the bedside with only partial resolution of the pleural effusion.  On CT scan evaluation, there is evidence of an entrapped right lower lobe with loculations.", Thoracotomy & Bronchoscopy ,Surgery,Surgery,True
+622," Sample normal ear, nose, mouth, and throat exam.", Normal ENT Exam ,General Medicine,General Medicine,True
+1311,"The patient is a 58-year-old female, referred to therapy due to left knee osteoarthritis.  The patient states that approximately 2 years ago, she fell to the ground and thereafter had blood clots in the knee area.  The patient was transferred from the hospital to a nursing home and lived there for 1 year.  The patient states that her primary concern is her left knee pain and they desire to walk short distances again in her home.", Physical Therapy - Osteoarthritis ,Orthopedic,Surgery,False
+358," Umbilical hernia repair. A standard curvilinear umbilical incision was made, and dissection was carried down to the hernia sac using a combination of Metzenbaum scissors and Bovie electrocautery.  ",Umbilical Hernia Repair - 1,Gastroenterology,Surgery,False
+1051,"BPP of Gravida 1, para 0 at 33 weeks 5 days by early dating.  The patient is developing gestational diabetes.", Biophysical Profile ,Obstetrics-Gynecology,Surgery,False
+2283, Laparoscopic appendectomy.  Acute suppurative appendicitis.  A CAT scan of the abdomen and pelvis was obtained revealing findings consistent with acute appendicitis.  There was no evidence of colitis on the CAT scan. ,Appendectomy Laparoscopic - 1,Surgery,Surgery,True
+20, Patient is here to discuss possible open lung biopsy., Lung Biopsy Discussion ,Cardiovascular-Pulmonary,Surgery,False
+827," A right-handed female with longstanding intermittent right low back pain, who was involved in a motor vehicle accident with no specific injury at that time. ",EMG/Nerve Conduction Study - 3,Neurology,Surgery,False
+971," Bilateral orbital frontal zygomatic craniotomy (skull base approach), bilateral orbital advancement with (C-shaped osteotomies down to the inferior orbital rim) with bilateral orbital advancement with bone grafts, bilateral forehead reconstruction with autologous graft.", Craniotomy - Frontal Zygomatic ,Neurosurgery,Surgery,False
+1323,"Diagnostic operative arthroscopy with repair and reconstruction of anterior cruciate ligament using autologous hamstring tendon, a 40 mm bioabsorbable femoral pin, and a 9 mm bioabsorbable tibial pin.  Repair of lateral meniscus using two fast fixed meniscal repair sutures.  Partial medial meniscectomy.  Partial chondroplasty of patella.  Lateral retinacular release.  Open medial plication as well of the right knee.", Ligament Reconstruction & Meniscus Repair ,Orthopedic,Surgery,False
+1016, Transvaginal ultrasound to evaluate pelvic pain., Ultrasound - Transvaginal ,Obstetrics-Gynecology,Surgery,False
+131, Central line insertion.  Empyema thoracis and need for intravenous antibiotics., Central Line Insertion ,Cardiovascular-Pulmonary,Surgery,False
+2155," Left and right heart catheterization and selective coronary angiography.  Coronary artery disease, severe aortic stenosis by echo.", Heart Catheterization & Angiography ,Surgery,Surgery,True
+807,"MRI Brain: Ventriculomegaly of the lateral, 3rd and 4th ventricles secondary to obstruction of the foramen of Magendie secondary to Cryptococcus (unencapsulated) in a non-immune suppressed, HIV negative, individual.", MRI Brain - Cryptococcus ,Neurology,Surgery,False
+518," General Medicine SOAP note.  Patient with shoulder bursitis, pharyngitis, attention deficit disorder, ",Gen Med SOAP - 5,General Medicine,Surgery,False
+1466,"A woman presenting to our clinic for the first time for evaluation of hip pain, right greater than left, of greater than 2 years duration.  The pain is located laterally as well as anteriorly into the groin.", Bilateral Hip Pain ,Orthopedic,Surgery,False
+99,No chest pain with exercise and no significant ECG changes with exercise. Poor exercise capacity 6 weeks following an aortic valve replacement and single-vessel bypass procedure.,Exercise Stress Test - 3,Cardiovascular-Pulmonary,Surgery,False
+1187," Followup cervical spinal stenosis.  Her symptoms of right greater than left upper extremity pain, weakness, paresthesias had been worsening after an incident when she thought she had exacerbated her conditions while lifting several objects.", Cervical Spinal Stenosis ,Orthopedic,Surgery,False
+790, Patient demonstrated mild cognitive deficits on a neuropsychological screening evaluation during a followup appointment for stroke., Neuropsychological Evaluation ,Neurology,Surgery,False
+87, Bronchoscopy for hypoxia and increasing pulmonary secretions,Bronchoscopy - 6,Cardiovascular-Pulmonary,Surgery,False
+1530, Ultrasound of pelvis - menorrhagia., Ultrasound - Pelvis  ,Radiology,Surgery,False
+916,Decompressive left lumbar laminectomy C4-C5 and C5-C6 with neural foraminotomy. Posterior cervical fusion C4-C5.  Songer wire.  Right iliac bone graft., Laminectomy & Foraminotomy & Cervical Fusion ,Neurosurgery,Surgery,False
+2431,Wrist de Quervain stenosing tenosynovitis.  de Quervain release.  Fascial lengthening flap of the 1st dorsal compartment., de Quervain Release - Wrist ,Surgery,Surgery,True
+2248," Excision of nasal tip basal carcinoma, previous positive biopsy.", BCCa Excision - Nasal Tip ,Surgery,Surgery,True
+1798," Direct laryngoscopy, rigid bronchoscopy and dilation of subglottic upper tracheal stenosis.", Laryngoscopy ,Surgery,Surgery,True
+2034, Left excisional breast biopsy due to atypical ductal hyperplasia of left breast.,Breast Biopsy - 1,Surgery,Surgery,True
+605, Patient with a diagnosis of stroke.,Gen Med Consult - 40,General Medicine,Surgery,False
+1572, Intensity-modulated radiation therapy simulation note.  The patient will receive intensity-modulated radiation therapy in order to deliver high-dose treatment to sensitive structures. , Intensity-Modulated Radiation Therapy Simulation ,Radiology,Surgery,False
+1097," Laparoscopic tubal sterilization, tubal coagulation.  ", Tubal Sterilization & Coagulation ,Obstetrics-Gynecology,Surgery,False
+130,  Implantation of a single-chamber pacemaker.  Fluoroscopic guidance for implantation of single-chamber pacemaker.,Pacemaker (Single Chamber) - 1,Cardiovascular-Pulmonary,Surgery,False
+2333, The patient had spraying of urine and ballooning of the foreskin with voiding., Circumcision ,Surgery,Surgery,True
+866, MRI Cervical Spine without contrast.,MRI Cervical Spine - 2,Neurology,Radiology,False
+2520, Bilateral open carpal tunnel release.,Carpal Tunnel Release - 5,Surgery,Surgery,True
+1924," Colonoscopy, conscious sedation, and snare polypectomy.",Colonoscopy & Polypectomy - 2,Surgery,Surgery,True
+749," CT head without contrast.  Assaulted, positive loss of consciousness, rule out bleed.  CT examination of the head was performed without intravenous contrast administration.",CT Head - 4,Neurology,Radiology,False
+205," To evaluate exercise-induced chest pain, palpitations, dizzy spells, shortness of breath, and abnormal EKG.",Cardiac Consultation - 2,Cardiovascular-Pulmonary,Cardiovascular-Pulmonary,True
+1872,Left masticator space infection secondary to necrotic tooth #17.  Extraoral incision and drainage of facial space infection and extraction of necrotic tooth #17., Extraoral I&D ,Surgery,Surgery,True
+286," Flexible fiberoptic bronchoscopy with right lower lobe bronchoalveolar lavage and right upper lobe endobronchial biopsy.  Severe tracheobronchitis, mild venous engorgement with question varicosities associated pulmonary hypertension, right upper lobe submucosal hemorrhage without frank mass underneath it status post biopsy.", Flexible Fiberoptic Bronchoscopy ,Cardiovascular-Pulmonary,Surgery,False
+2414,Right hemothorax.  Insertion of a #32 French chest tube on the right hemithorax.  This is a 54-year-old female with a newly diagnosed carcinoma of the cervix.  The patient is to have an Infuse-A-Port insertion., Chest Tube Insertion ,Surgery,Surgery,True
+379," Percutaneous endoscopic gastrostomy tube.  Protein-calorie malnutrition.  The patient was unable to sustain enough caloric intake and had markedly decreased albumin stores.  After discussion with the patient and the son, they agreed to place a PEG tube for nutritional supplementation.", PEG Tube ,Gastroenterology,Surgery,False
+88,"Aortoiliac occlusive disease.  Aortobifemoral bypass.  The aorta was of normal size and consistency consistent with arteriosclerosis.  A 16x8 mm Gore-Tex graft was placed without difficulty.  The femoral vessels were small somewhat thin and there was posterior packing, but satisfactory bypass was performed.", Aortobifemoral Bypass ,Cardiovascular-Pulmonary,Surgery,False
+1562, Carotid and cerebral arteriogram - abnormal carotid duplex studies demonstrating occlusion of the left internal carotid artery., Carotid & Cerebral Arteriograms ,Radiology,Cardiovascular-Pulmonary,False
+2288, Sepsis due to urinary tract infection.,Gen Med Progress Note - 13,General Medicine,Surgery,False
+704, Sepsis.  The patient was found to have a CT scan with dilated bladder with thick wall suggesting an outlet obstruction as well as bilateral hydronephrosis and hydroureter., Sepsis - Consult ,General Medicine,Surgery,False
+1663, MRI left knee without contrast.,MRI Knee - 1,Radiology,Orthopedic,False
+1048, Emergency cesarean section., Emergency C-section. ,Obstetrics-Gynecology,Surgery,False
+1010,Lysis of pelvic adhesions.  The patient had an 8 cm left ovarian mass.   The mass was palpable on physical examination and was tender.  She was scheduled for an elective pelvic laparotomy with left salpingooophorectomy., Lysis of Pelvic Adhesions ,Obstetrics-Gynecology,Surgery,False
+43," Left heart catheterization, LV cineangiography, selective coronary angiography, and right heart catheterization with cardiac output by thermodilution technique with dual transducer.", Cardiac Catheterization ,Cardiovascular-Pulmonary,Surgery,False
+2091, Hypospadias repair. Urethroplasty plate incision with tissue flap relocation and chordee release., Hypospadias Repair ,Surgery,Surgery,True
+1139," Cataract extraction with lens implantation, right eye.  The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded.", Cataract Extraction ,Ophthalmology,Surgery,False
+2329,"Bifrontal cranioplasty, cranial defect greater than 10 cm in diameter in the frontal region.", Bifrontal Cranioplasty ,Surgery,Surgery,True
+2263,"Redo coronary bypass grafting x3, right and left internal mammary, left anterior descending, reverse autogenous saphenous vein graft to the obtuse marginal and posterior descending branch of the right coronary artery.  Total cardiopulmonary bypass, cold-blood potassium cardioplegia, antegrade for myocardial protection.  Placement of a right femoral intraaortic balloon pump.", CABG - Redo ,Surgery,Surgery,True
+904," Biparietal craniotomy, insertion of left lateral ventriculostomy, right suboccipital craniectomy and excision of tumor.", Craniotomy - Biparietal  ,Neurosurgery,Surgery,False
+2086, OssaTron extracorporeal shockwave therapy to right lateral epicondyle.  Right lateral epicondylitis., OssaTron Extracorporeal Shockwave Therapy ,Surgery,Surgery,True
+1752, Bilateral Myringotomy with placement of PE tubes,Bilateral Myringotomies - 2,Surgery,Surgery,True
+585, Patient in with mom for possible ear infection.,Gen Med Consult - 23,General Medicine,Surgery,False
+2043, Dental restoration.    Dental caries.  Cavities have been noted by his parents and pediatrician that have been noted to be pretty severe. , Dental Restoration ,Surgery,Surgery,True
+1948,"Surgical removal of completely bony impacted teeth #1, #16, #17, and #32.  Completely bony impacted teeth #1, #16, #17, and #32.", Bony Impacted Teeth Removal ,Surgery,Surgery,True
+869, MRI report Cervical Spine (Chiropractic Specific), MRI Cervical Spine - Chiropractic Specific ,Neurology,Orthopedic,False
+351, Intermittent rectal bleeding with abdominal pain.,Endoscopy - 4,Gastroenterology,Surgery,False
+1919,"Grade 1 endometrial adenocarcinoma and low-grade mesothelioma of the ovary - Omentectomy, pelvic lymph node dissection, and laparoscopy.", Adenocarcinoma & Mesothelioma ,Surgery,Surgery,True
+1523, Carotid Ultrasonic & Color Flow Imaging, Carotid Doppler Report ,Radiology,Cardiovascular-Pulmonary,False
+2143," Right frontotemporoparietal craniotomy, evacuation of acute subdural hematoma.   Acute subdural hematoma, right, with herniation syndrome.", Frontotemporoparietal Craniotomy ,Surgery,Surgery,True
+2604," Left heart catheterization, LV cineangiography, selective coronary angiography, and right heart catheterization with cardiac output by thermodilution technique with dual transducer.", Cardiac Catheterization ,Surgery,Surgery,True
+2271, Flexible Sigmoidoscopy., Flex Sig ,Surgery,Surgery,True
+1337,"Lumbar discogram L2-3, L3-4, L4-5, and L5-S1.  Low back pain.", Lumbar Discogram ,Orthopedic,Surgery,False
+1888," Bilateral degenerative arthritis of the knees.  Right total knee arthroplasty done in conjunction with a left total knee arthroplasty, which will be dictated separately.", Knee Arthroplasty ,Surgery,Surgery,True
+2533," Bilateral myringotomies with Armstrong grommet tubes, Adenoidectomy, and Tonsillectomy.",Bilateral Myringotomies - 1,Surgery,Surgery,True
+1275,A 51-year-old female with left shoulder pain and restricted external rotation and abduction x 6 months.,MRI Shoulder - 2,Orthopedic,Surgery,False
+2500, Insertion of Port-A-Cath via left subclavian vein using fluoroscopy in a patient with renal cell carcinoma.,Port-A-Cath Insertion - 3,Surgery,Surgery,True
+701, Patient with a three-day history of emesis and a four-day history of diarrhea,Gen Med Progress Note - 7,General Medicine,Surgery,False
+2594," Exploratory laparotomy, radical hysterectomy, bilateral ovarian transposition, pelvic and obturator lymphadenectomy.", Radical Hysterectomy ,Surgery,Surgery,True
+1789, Bilateral Crawford subtalar arthrodesis with open Achilles Z-lengthening and bilateral long-leg cast., Arthrodesis ,Surgery,Surgery,True
+1573, CT Brain: Subarachnoid hemorrhage., CT Brain - SAH ,Radiology,Neurology,False
+1760," Stab wound, left posterolateral chest.   Closure of stab wound.", Stab Wound Closure ,Surgery,Surgery,True
+2219, Placement of a subclavian single-lumen tunneled Hickman central venous catheter.  Surgeon-interpreted fluoroscopy., Hickman Central Venous Catheter Placement ,Surgery,Surgery,True
+505,Esophagogastroduodenoscopy with antral biopsies for H. pylori x2 with biopsy forceps.  Nausea and vomiting and upper abdominal pain.,Esophagogastroduodenoscopy - 10,Gastroenterology,Surgery,False
+1198," Hemarthrosis, left knee, status post total knee replacement, rule out infection.  Arthrotomy, irrigation and debridement, and polyethylene exchange, left knee.  No complications were encountered throughout the procedure.", Arthrotomy & I&D ,Orthopedic,Surgery,False
+1495,"The patient is admitted on a 72-hour involuntary treatment for dangerousness to others after repeated assaultive behaviors at Hospital Emergency Room, the morning prior to admission.", Psych Consult - Assaultive Behavior ,Psychiatry-Psychology,Surgery,False
+545, Possible free air under the diaphragm.  On a chest x-ray for what appeared to be shortness of breath she was found to have what was thought to be free air under the right diaphragm.  No intra-abdominal pathology., Air Under Diaphragm - Consult ,General Medicine,Surgery,False
+1443," Followup left-sided rotator cuff tear and cervical spinal stenosis.  Physical examination and radiographic findings are compatible with left shoulder pain and left upper extremity pain, which is due to a combination of left-sided rotator cuff tear and moderate cervical spinal stenosis.", Rotator Cuff Tear ,Orthopedic,Surgery,False
+293," Dual chamber generator replacement.  The patient is a pleasant patient who presented to the office, recently was found to be at ERI and she has been referred for generator replacement.", Dual Chamber Generator Replacement ,Cardiovascular-Pulmonary,Surgery,False
+2065, Ligation and stripping of left greater saphenous vein to the level of the knee.  Stripping of multiple left lower extremity varicose veins.  Varicose veins., Saphenous Vein - Ligation & Stripping ,Surgery,Surgery,True
+58, Right upper lung lobectomy.  Mediastinal lymph node dissection, Lobectomy & Lymph Node Dissection ,Cardiovascular-Pulmonary,Surgery,False
+1444," Incision and drainage and excision of the olecranon bursa, left elbow.  Acute infected olecranon bursitis, left elbow.", Olecranon Bursa - Excision ,Orthopedic,Surgery,False
+2071," Open reduction, nasal fracture with nasal septoplasty.", Nasal Septoplasty ,Surgery,Surgery,True
+965,Left L4-L5 transforaminal neuroplasty with nerve root decompression and lysis of adhesions followed by epidural steroid injection., Neuroplasty ,Neurosurgery,Surgery,False
+1627, CT of the facial bones without contrast due to hit in nose., CT of Facial Wones w/o Contrast ,Radiology,Surgery,False
+1428, Left medial compartment osteoarthritis of the knee.  Left unicompartmental knee replacement., Knee Replacement ,Orthopedic,Surgery,False
+1271, Initial evaulation - neck and back pain., Neck & Back Pain ,Orthopedic,Orthopedic,True
+1732,"Right total knee arthroplasty using a Biomet cemented components, 62.5-mm right cruciate-retaining femoral component, 71-mm Maxim tibial component, and 12-mm polyethylene insert with 31-mm patella.  All components were cemented with Cobalt G.",Total Knee Arthoplasty - Right - 1,Surgery,Surgery,True
+1149," Phacoemulsification of cataract and posterior chamber lens implant, right eye.",Phacoemulsification & Lens Implantation - 4,Ophthalmology,Surgery,False
+456," Screening colonoscopy.  Tiny polyps.   If adenomatous, repeat exam in five years.  ",Colonoscopy - 20,Gastroenterology,Surgery,False
+700, Sample male exam and review of systems., Male Exam & ROS ,General Medicine,General Medicine,True
+2119," Pelvic laparotomy, lysis of pelvic adhesions, and left salpingooophorectomy with insertion of Pain-Buster Pain Management System.", Pelvic Laparotomy ,Surgery,Surgery,True
+2543, Left forearm arteriovenous fistula between cephalic vein and radial artery.,AV Fistula - 5,Surgery,Surgery,True
+1448, MRI cervical spine.,MRI Cervical Spine - 1,Orthopedic,Orthopedic,True
+1137,"Patient  follows up for cataract extraction with lens implant 2 weeks ago.   Recovering well from her cataract operation in the right eye with residual corneal swelling, which should resolve in the next 2 to 3 weeks.", Cataract Extraction Followup ,Ophthalmology,Surgery,False
+961,"Evacuation of epidural hematoma and insertion of epidural drain.   Epidural hematoma, cervical spine.  Status post cervical laminectomy, C3 through C7 postop day #10.  Central cord syndrome and acute quadriplegia.", Epidural Hematoma Evacuation ,Neurosurgery,Surgery,False
+2531,Anterior cervical discectomy fusion C3-C4 and C4-C5 using operating microscope and the ABC titanium plates fixation with bone black bone procedure.  Cervical spondylotic myelopathy with cord compression and cervical spondylosis., Anterior Cervical Discectomy & Fusion ,Surgery,Surgery,True
+188,"Left heart catheterization with ventriculography, selective coronary angiography.  Standard Judkins, right groin.  Catheters used were a 6 French pigtail, 6 French JL4, 6 French JR4.","Heart Catheterization, Ventriculography, & Angiography - 3",Cardiovascular-Pulmonary,Surgery,False
+1038,"Dilation and curettage (D&C) and hysteroscopy.  A female presents 7 months status post spontaneous vaginal delivery, has had abnormal uterine bleeding since her delivery with an ultrasound showing a 6 cm x 6 cm fundal mass suspicious either for retained products or endometrial polyp.",D&C & Hysteroscopy - 1,Obstetrics-Gynecology,Surgery,False
+1737," Dilation and curettage (D&C), laparoscopy, and harmonic scalpel ablation of lesion which is suspicious for endometriosis.  Chronic pelvic pain, hypermenorrhea, desire for future fertility, failed conservative medical therapy, possible adenomyosis, left hydrosalpinx, and suspicion for endometriosis.",D&C & Laparoscopy - 1,Surgery,Surgery,True
+766," The patient with pseudotumor cerebri without papilledema, comes in because of new onset of headaches. ", Pseudotumor Cerebri ,Neurology,Surgery,False
+825," Patient was referred for a neuropsychological evaluation after a recent hospitalization for possible transient ischemic aphasia.  Two years ago, a similar prolonged confusional spell was reported as well.  A comprehensive evaluation was requested to assess current cognitive functioning and assist with diagnostic decisions and treatment planning.",Neuropsychological Evaluation - 3,Neurology,Surgery,False
+1486," Psychiatric evaluation for ADHD, combined type.",Psychiatric Evaluation - 3,Psychiatry-Psychology,Surgery,False
+650, A white female with a history of fevers.,Discharge Summary - 8,General Medicine,Surgery,False
+1609, Right foot trauma.  Three views of the right foot.  Three views of the right foot were obtained.  , Three Views - Foot ,Radiology,Surgery,False
+145,Insertion of a VVIR permanent pacemaker.  This is an 87-year-old Caucasian female with critical aortic stenosis with an aortic valve area of 0.5 cm square and recurrent congestive heart failure symptoms mostly refractory to tachybrady arrhythmias, VVIR Permanent Pacemaker Insertion ,Cardiovascular-Pulmonary,Surgery,False
+498, Colon cancer screening and family history of polyps.  Sigmoid diverticulosis and internal hemorrhoids.,Colonoscopy - 10,Gastroenterology,Surgery,False
+718, Noncontrast CT head due to seizure disorder.,CT Head - 1,Neurology,Radiology,False
+447, Foul-smelling urine and stomach pain after meals., Foul-Smelling Urine ,Gastroenterology,Surgery,False
+2398," Total knee replacement.  A midline incision was made, centered over the patella.  Dissection was sharply carried down through the subcutaneous tissues.  A median parapatellar arthrotomy was performed.",Total Knee Replacement - 1,Surgery,Surgery,True
+2083, Needle localization and left breast biopsy for left breast mass.,Breast Biopsy - 2,Surgery,Surgery,True
+471,"She is a 79-year-old female who came in with acute cholecystitis and underwent attempted laparoscopic cholecystectomy 8 days ago.  The patient has required conversion to an open procedure due to difficult anatomy.  Her postoperative course has been lengthened due to a prolonged ileus, which resolved with tetracycline and Reglan.  The patient is starting to improve, gain more strength.  She is tolerating her regular diet.", SOAP - Cholecystitis ,Gastroenterology,Surgery,False
+52,"Echocardiographic examination.  Borderline left ventricular hypertrophy with normal ejection fraction at 60%, mitral annular calcification with structurally normal mitral valve, no intracavitary thrombi is seen, interatrial septum was somewhat difficult to assess, but appeared to be intact on the views obtained.", Echocardiography ,Cardiovascular-Pulmonary,Surgery,False
+295, A simple note on Acne Vulgaris., Acne Vulgaris ,Dermatology,Surgery,False
+877, CT Scan of  brain without contrast., CT Scan of  Brain w/o Contrast ,Neurology,Radiology,False
+1439," Bilateral degenerative arthritis of the knees.  Right total knee arthroplasty done in conjunction with a left total knee arthroplasty, which will be dictated separately.", Knee Arthroplasty ,Orthopedic,Surgery,False
+2441, Venogram of the left arm and creation of left brachiocephalic arteriovenous fistula.,AV Fistula - 1,Surgery,Surgery,True
+134, Left lower lobectomy., Lobectomy - Left Lower ,Cardiovascular-Pulmonary,Surgery,False
+765," CT Brain: Suprasellar aneurysm, pre and post bleed.", CT Brain - Aneurysm ,Neurology,Radiology,False
+977, Complex right lower quadrant mass with possible ectopic pregnancy.  Right ruptured tubal pregnancy and pelvic adhesions. Dilatation and curettage and laparoscopy with removal of tubal pregnancy and right partial salpingectomy., D&C & Tubal Pregnancy Removal ,Obstetrics-Gynecology,Surgery,False
+1931,Left L4-L5 transforaminal neuroplasty with nerve root decompression and lysis of adhesions followed by epidural steroid injection., Neuroplasty ,Surgery,Surgery,True
+2131, Debulking of hemangioma of the nasal tip through an open rhinoplasty approach and rhinoplasty., Hemangioma Debulking & Rhinoplasty ,Surgery,Surgery,True
+1709, MRI - Arteriovenous malformation with hemorrhage., AVM with Hemorrhage ,Radiology,Surgery,False
+2462," Acetabular fracture on the left posterior column/transverse posterior wall variety with an accompanying displaced fracture of the intertrochanteric variety to the left hip.  Osteosynthesis of acetabular fracture on the left, complex variety and total hip replacement.", Osteosynthesis ,Surgery,Surgery,True
+1679, Carotid artery angiograms., Bilateral Carotid Angiography ,Radiology,Cardiovascular-Pulmonary,False
+2032, Left axillary lymph node excisional biopsy.  Left axillary adenopathy., Lymph Node Excisional Biopsy ,Surgery,Surgery,True
+1401,"The patient is a 26-year-old female, referred to Physical Therapy for low back pain.  The patient has a history of traumatic injury to low back.", Physical Therapy - Low Back Pain  ,Orthopedic,Surgery,False
+1785, Esophagogastroduodenoscopy with biopsy and colonoscopy with biopsy.,Esophagogastroduodenoscopy - 4,Surgery,Surgery,True
+2610,"Esophagogastroduodenoscopy with gastric biopsies.  Antral erythema 2 cm polypoid pyloric channel tissue, questionable inflammatory polyp which was biopsied duodenal erythema and erosion.",Esophagogastroduodenoscopy with Biopsies - 1,Surgery,Surgery,True
+1052, Bilateral Screening Mammogram Full-Field Digital Mammography (FFDM) (Benign Findings),Full-Field Digital Mammogram (FFDM) - 1,Obstetrics-Gynecology,Surgery,False
+1891," Insertion of a right brachial artery arterial catheter and a right subclavian vein triple lumen catheter.  Hyperpyrexia/leukocytosis, ventilator-dependent respiratory failure, and acute pancreatitis.", Triple Lumen Catheter Insertion ,Surgery,Surgery,True
+1967, Placement of SynchroMed infusion pump and tunneling of SynchroMed infusion pump catheter.  Anchoring of the intrathecal catheter and connecting of the right lower quadrant SynchroMed pump catheter to the intrathecal catheter., SynchroMed Pump Placement ,Surgery,Surgery,True
+1998," Open reduction and internal plate and screw fixation of depressed anterior table right frontal sinus, transconjunctival exploration of orbital floor, open reduction of nasal septum and nasal pyramid fracture with osteotomy.", Sinus Fractures Repairs ,Surgery,Surgery,True
+345, Appendicitis.  Laparoscopic appendectomy. Infraumbilical incision was performed and taken down to the fascia.  The fascia was incised.  The peritoneal cavity was carefully entered.  Two other ports were placed in the right and left lower quadrants.,Laparoscopic Appendectomy - 2,Gastroenterology,Surgery,False
+1345, Patient with chronic pain plus lumbar disk replacement with radiculitis and myofascial complaints. ,Orthopedic Consult - 4,Orthopedic,Surgery,False
+1739," Creation of AV fistula, left wrist in the anatomic snuffbox.",AV Fistula - 3,Surgery,Surgery,True
+2243,"VATS right middle lobectomy, fiberoptic bronchoscopy, mediastinal lymph node sampling, tube thoracostomy x2, multiple chest wall biopsies and excision of margin on anterior chest wall adjacent to adherent tumor.", Lobectomy - VATS ,Surgery,Surgery,True
+2457," Phacoemulsification of cataract and posterior chamber lens implant, right eye.",Phacoemulsification & Lens Implantation - 4,Surgery,Surgery,True
+1357, Consultation for FCR tendinitis, FCR tendinitis ,Orthopedic,Surgery,False
+561, Short-term memory loss (probable situational) and anxiety stress issues.,Gen Med Consult - 16,General Medicine,Surgery,False
+2599,Left C5-6 hemilaminotomy and foraminotomy with medial facetectomy for microscopic decompression of nerve root., Hemilaminotomy & Foraminotomy ,Surgery,Surgery,True
+1836, Lower lid blepharoplasty., Blepharoplasty - Lower Lid ,Surgery,Surgery,True
+860," Numbness and tingling in the right upper extremity, intermittent and related to the positioning of the wrist.  Carpal tunnel syndrome suspected.", SOAP - Numbness & Tingling ,Neurology,Surgery,False
+2228,"Left hemothorax, rule out empyema.  Insertion of a 12-French pigtail catheter in the left pleural space.", Pigtail Catheter Insertion ,Surgery,Surgery,True
+828,Left arm and hand numbness.  CT head without contrast.  Noncontrast axial CT images of the head were obtained with 5 mm slice thickness.,CT Head - 3,Neurology,Radiology,False
+2113, Left elbow manipulation and hardware removal of left elbow., Elbow Manipulation ,Surgery,Surgery,True
+713," Possible exposure to ant bait.  She is not exhibiting any symptoms and parents were explained that if she develops any vomiting, she should be brought back for reevaluation.", Ant Bait Exposure - ER Visit ,General Medicine,Surgery,False
+317, Worrisome skin lesion.  A punch biopsy of the worrisome skin lesion was obtained.  Lesion was removed.,Punch Biopsy - 2,Dermatology,Surgery,False
+1014,OB Ultrasound - A 29-year-old female requests for size and date of pregnancy.,Ultrasound OB - 1,Obstetrics-Gynecology,Surgery,False
+969,"Chronic venous hypertension with painful varicosities, lower extremities, bilaterally.  Greater saphenous vein stripping and stab phlebectomies requiring 10 to 20 incisions, bilaterally.", Vein Stripping ,Neurosurgery,Surgery,False
+1446, Right shoulder hemiarthroplasty.   Right shoulder rotator cuff tear.  Glenohumeral rotator cuff arthroscopy.  Degenerative joint disease., Right Shoulder Hemiarthroplasty ,Orthopedic,Surgery,False
+2247," Left inguinal herniorrhaphy, modified Bassini.  Left inguinal hernia, direct.",Inguinal Herniorrhaphy - 3,Surgery,Surgery,True
+309," Maculopapular rash in kind of a linear pattern over arms, legs, and chest area which are consistent with a poison ivy or a poison oak.", Poison Ivy - SOAP ,Dermatology,Surgery,False
+2518," Dilation and curettage (D&C), laparoscopy, right salpingectomy, lysis of adhesions, and evacuation of hemoperitoneum.  Pelvic pain, ectopic pregnancy, and hemoperitoneum."," D&C, Laparoscopy, & Salpingectomy ",Surgery,Surgery,True
+2037," Pyogenic granuloma, left lateral thigh.   Excision of recurrent pyogenic granuloma.", Granuloma Excision ,Surgery,Surgery,True
+1687, Comprehensive electrophysiology studies with attempted arrhythmia induction and IV Procainamide infusion for Brugada syndrome., IV Procainamide Infusion ,Radiology,Cardiovascular-Pulmonary,False
