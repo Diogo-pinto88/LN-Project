@@ -1,0 +1,89 @@
+\documentclass[twocolumn,10pt]{article}
+
+\usepackage{authblk}
+\usepackage{bera}
+\usepackage[utf8]{inputenc}
+
+% TITLE
+\title{Title}
+
+
+% AUTHORS
+\author{Group XXX, Author 1, 2, 3 and 4 -- \textbf{also, indicate here the percentage of each group member’s contribution to the project (mandatory).}}
+%\affil{Instituto Superior Técnico, Universidade de Lisboa}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Data}
+
+\subsection{Data Analysis}
+
+\subsection{Data Augmentation}
+
+\section{Models}
+ 
+\section{Experimental Setup}
+ 
+\subsection{Parameters/Hyperparameters}
+
+\section{Results}
+
+\section{Discussion} 
+
+\section{Future Work}
+
+\section*{Bibliography}
+
+\bibliographystyle{apalike}
+\bibliography{biblio}
+Bibliography does not count for the 3 pages limit.
+
+% One page at most. Only the first two pages of the paper will be read. The appendix should only contain complementary information.
+
+\appendix
+
+\section*{Appendix A: Extra Figures and Tables}
+
+Maximum one page (it does not count for the 3 pages limit): just extra figures and tables. \textbf{Notice that we should be able to understand the 3 pages paper without these figures and tables.}
+
+\section{Evaluation and tips (remove this section before submission)}
+
+Scores by section:
+\begin{itemize}
+\item (1.5) Introduction: beyond the classification task itself, \textbf{explicitly} identify the research question your group wants to answer. For instance: how does classical machine learning compare to current language models on clinical text? Which data augmentation strategy is most effective for highly imbalanced medical datasets? This research question should guide your model choices, your experimental setup, and your discussion. It defines the \textbf{story of the paper}. The remaining sections of the paper should be read as an attempt to answer it.
+\item (1.5) Data Analysis: describe the dataset (class distribution and relevant statistics); provide at least 2 concrete observations about patterns or anomalies you found by looking at the data. Generic descriptions score zero.
+\item (2.0) Data Augmentation: you should do some kind of data augmentation. Clearly describe your strategy.
+\item (4.0) Models: clearly describe the models you built and the choices you made, considering the research question you have identified previously (you should describe at least 3 models) (1.0). When describing your models, keep replicability in mind (1.0): would someone be able to reproduce your results just by reading this section? We will also reward creativity (2.0): did you explore different approaches and make thoughtful choices, or did you simply run code you found online?
+\item (1.0) Experimental Setup: provide clear information regarding the used datasets, splits (which result in your own test set(s)), evaluation metrics used and hyperparameters (if applicable).
+\item (1.5) Results: provide the results of your best models, and also results by label of your best model. You should also present a comprehensive confusion matrix of one of your models (not necessarily the best one). The given test set (test\_no\_labels.txt) should ****only**** be used to generate the file results.txt.
+\item (3.0) Discussion: show us that you have properly analysed the dataset and the obtained outputs (not just by looking at statistics or confusion matrices). Try to explain the most common errors. Present and discuss at least 3 concrete examples of misclassified instances from your own test set (include the text excerpt, the predicted label, the correct label, and your interpretation). Generic statements score zero. Also, explain how results align with the research question you have identified in the introduction.
+\item (0.5) Future Work: if more time was given, explain what you would do to improve your system, considering the research question identified in the introduction.
+\item (1.0) References: Identify all papers, external sources, and pre-trained models used; also explicitly declare how have you used LLMs.
+\end{itemize}
+Tips:
+\begin{itemize}
+\item Label figures and tables.
+\item Use the correct quotation marks in Latex (``bla-bla'').
+\item If you use a figure or table, refer to it.
+\item If you say things such as ``The dataset is unbalanced'', explain why (facts).
+\item Use formal English (so, no ``it's'', ``they're'', etc.).
+\item If you mention a hyperparameter, explain it (briefly).
+\item If you use an acronym, use it consistently (check how to do it in latex).
+\item Use labels that are easy to be read in the Confusion Matrix.
+\item Cite your sources (papers) or add footnotes with URLs for computational resources.
+\item Do not use subjective adjectives (e.g.: amazing work, nice concept, ...). This is science.
+\end{itemize}
+ 
+
+\end{document}
+
+ \item{How the project will be evaluated}
+\begin{itemize}
+\item (1.5) General quality of the paper: are the proposed methods sound? Clearness, zero typos, illustrative examples, pictures and figures, etc.
+\item (1.5) Replicability: if we wanted to replicate your results, just by reading the paper, would we be able to do it?
+\item (2.0) The creativity of your approach: you just limited yourself to run a code you found somewhere or you tried different approaches?
+\item (1.0) References: identify all external sources, libraries, and pre-trained models used; also explicitly declare how have you used LLMs.
