@@ -1,0 +1,46 @@
+Multi-field Linear SVM
+======================
+
+Keyword prefix removed: yes
+Random state: 42
+Validation size: 0.2
+Training instances: 2086
+Validation instances: 522
+
+Accuracy: 0.379
+Macro-F1: 0.418
+Minimum per-class F1: Neurosurgery = 0.154
+
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.317     0.317     0.317        60
+             Dermatology      1.000     0.400     0.571         5
+        Gastroenterology      0.371     0.342     0.356        38
+        General Medicine      0.629     0.951     0.757        41
+               Neurology      0.209     0.250     0.228        36
+            Neurosurgery      0.125     0.200     0.154        15
+   Obstetrics-Gynecology      0.286     0.296     0.291        27
+           Ophthalmology      0.579     0.786     0.667        14
+              Orthopedic      0.345     0.322     0.333        59
+   Psychiatry-Psychology      0.636     0.875     0.737         8
+               Radiology      0.250     0.227     0.238        44
+                 Surgery      0.406     0.331     0.365       175
+
+                accuracy                          0.379       522
+               macro avg      0.429     0.441     0.418       522
+            weighted avg      0.377     0.379     0.372       522
+
+Prediction counts:
+predicted_label
+Surgery                     143
+General Medicine             62
+Cardiovascular-Pulmonary     60
+Orthopedic                   55
+Neurology                    43
+Radiology                    40
+Gastroenterology             35
+Obstetrics-Gynecology        28
+Neurosurgery                 24
+Ophthalmology                19
+Psychiatry-Psychology        11
+Dermatology                   2
