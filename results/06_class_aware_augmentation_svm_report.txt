@@ -1,0 +1,59 @@
+Class-aware augmented multi-field Linear SVM
+============================================
+
+Keyword prefix removed: yes
+Augmentation: random word deletion
+Word deletion probability: 0.1
+Augmentation target per class: 150
+Maximum augmented copies per example: 3
+Random state: 42
+Validation size: 0.2
+Original training instances: 2086
+Augmented training instances: 2471
+Validation instances: 522
+
+Augmented examples created per class:
+- Dermatology: 60
+- Neurology: 5
+- Neurosurgery: 88
+- Obstetrics-Gynecology: 43
+- Ophthalmology: 93
+- Psychiatry-Psychology: 96
+
+Accuracy: 0.377
+Macro-F1: 0.416
+Minimum per-class F1: Neurosurgery = 0.154
+
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.323     0.333     0.328        60
+             Dermatology      1.000     0.400     0.571         5
+        Gastroenterology      0.371     0.342     0.356        38
+        General Medicine      0.639     0.951     0.765        41
+               Neurology      0.214     0.250     0.231        36
+            Neurosurgery      0.125     0.200     0.154        15
+   Obstetrics-Gynecology      0.286     0.296     0.291        27
+           Ophthalmology      0.579     0.786     0.667        14
+              Orthopedic      0.333     0.305     0.319        59
+   Psychiatry-Psychology      0.636     0.875     0.737         8
+               Radiology      0.225     0.205     0.214        44
+                 Surgery      0.403     0.331     0.364       175
+
+                accuracy                          0.377       522
+               macro avg      0.428     0.440     0.416       522
+            weighted avg      0.374     0.377     0.370       522
+
+Prediction counts:
+predicted_label
+Surgery                     144
+Cardiovascular-Pulmonary     62
+General Medicine             61
+Orthopedic                   54
+Neurology                    42
+Radiology                    40
+Gastroenterology             35
+Obstetrics-Gynecology        28
+Neurosurgery                 24
+Ophthalmology                19
+Psychiatry-Psychology        11
+Dermatology                   2
