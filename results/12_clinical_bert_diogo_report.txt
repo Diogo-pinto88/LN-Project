@@ -1,0 +1,31 @@
+=== CLINICALBERT RESULTS ===
+Model: emilyalsentzer/Bio_ClinicalBERT
+Maximum tokens: 128
+Epochs: 2
+Training instances: 2086
+Validation instances: 522
+Correct predictions: 483/522
+Accuracy: 0.9253
+Macro-F1: 0.9139
+Minimum per-class F1: Psychiatry-Psychology = 0.7778
+Best checkpoint: /Users/diogopinto/Desktop/TECNICO/LN/PROJ/LN-Project/.checkpoints/12_clinical_bert_diogo/checkpoint-522
+
+=== CLASSIFICATION REPORT ===
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.898     0.883     0.891        60
+             Dermatology      1.000     1.000     1.000         5
+        Gastroenterology      0.946     0.921     0.933        38
+        General Medicine      0.709     0.951     0.812        41
+               Neurology      0.882     0.833     0.857        36
+            Neurosurgery      0.882     1.000     0.938        15
+   Obstetrics-Gynecology      0.929     0.963     0.945        27
+           Ophthalmology      0.933     1.000     0.966        14
+              Orthopedic      0.982     0.915     0.947        59
+   Psychiatry-Psychology      0.700     0.875     0.778         8
+               Radiology      0.975     0.886     0.929        44
+                 Surgery      0.994     0.949     0.971       175
+
+                accuracy                          0.925       522
+               macro avg      0.903     0.931     0.914       522
+            weighted avg      0.934     0.925     0.927       522

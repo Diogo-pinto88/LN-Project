@@ -1,0 +1,35 @@
+=== CLINICALBERT WITH SOFTENED CLASS WEIGHTS ===
+Model: emilyalsentzer/Bio_ClinicalBERT
+Keyword prefix removed: yes
+Class weights: square root of balanced weights
+Maximum tokens: 128
+Epochs: 2
+Training instances: 2086
+Validation instances: 522
+Training prefixes removed: 1737
+Validation prefixes removed: 434
+Correct predictions: 288/522
+Accuracy: 0.5517
+Macro-F1: 0.5270
+Minimum per-class F1: Dermatology = 0.0000
+Best checkpoint: /Users/diogopinto/Desktop/TECNICO/LN/PROJ/LN-Project/.checkpoints/15_clinical_bert_soft_weights/checkpoint-522
+
+=== CLASSIFICATION REPORT ===
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.533     0.817     0.645        60
+             Dermatology      0.000     0.000     0.000         5
+        Gastroenterology      0.590     0.947     0.727        38
+        General Medicine      0.688     0.805     0.742        41
+               Neurology      0.432     0.444     0.438        36
+            Neurosurgery      0.357     0.667     0.465        15
+   Obstetrics-Gynecology      0.488     0.778     0.600        27
+           Ophthalmology      0.611     0.786     0.688        14
+              Orthopedic      0.488     0.695     0.573        59
+   Psychiatry-Psychology      0.583     0.875     0.700         8
+               Radiology      0.375     0.273     0.316        44
+                 Surgery      0.776     0.297     0.430       175
+
+                accuracy                          0.552       522
+               macro avg      0.493     0.615     0.527       522
+            weighted avg      0.596     0.552     0.525       522
