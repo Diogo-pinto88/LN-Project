@@ -95,9 +95,12 @@ if __name__ == "__main__":
     raw_train, raw_test = load_data()
     train, test = clean_data(raw_train, raw_test)
 
+    train.to_csv(DATA_DIR / "train_clean.csv", sep=";", index=False)
+
     print("Treino original:", raw_train.shape)
     print("Treino limpo:", train.shape)
     print("Teste:", test.shape)
+    print("Arquivo gerado:", DATA_DIR / "train_clean.csv")
 
     print("Especialidades:", train["medical_specialty"].nunique())
     print("Valores em falta no treino:", train.isna().sum().sum())

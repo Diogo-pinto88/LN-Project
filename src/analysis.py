@@ -1,4 +1,6 @@
-from data import FEATURE_COLUMNS, load_data
+import pandas as pd
+
+from data import DATA_DIR, FEATURE_COLUMNS
 
 
 EXPECTED_LABELS = [
@@ -16,8 +18,13 @@ EXPECTED_LABELS = [
     "Surgery",
 ]
 
-
-train, test = load_data()
+train = pd.read_csv(DATA_DIR / "train_clean.csv", sep=";")
+test = pd.read_csv(
+    DATA_DIR / "test_no_labels.csv",
+    sep=";",
+    header=None,
+    names=FEATURE_COLUMNS,
+)
 
 
 print("=== TAMANHO DOS DADOS ===")
