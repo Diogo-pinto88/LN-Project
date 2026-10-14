@@ -1,0 +1,69 @@
+=== FINAL VALIDATION ANALYSIS ===
+
+Official evaluation set used: no
+Validation split: stratified 80/20
+Random seed: 42
+Validation instances: 522
+
+=== BEST SYSTEM ===
+Experiment: 16
+Model: Metadata-gated hybrid
+Accuracy: 0.9387
+Macro-F1: 0.9233
+Minimum per-class F1: 0.7368
+
+=== HYBRID RESULTS ===
+Correct predictions: 490/522
+Accuracy: 0.9387
+Macro-F1: 0.9233
+Weighted F1: 0.9401
+Minimum F1: Psychiatry-Psychology = 0.7368
+
+=== DUPLICATE-LABEL ANALYSIS ===
+Conflicting exact-input groups in cleaned training data: 79
+Rows in these groups: 165
+Validation inputs with an exact training duplicate: 33
+Hybrid errors associated with a conflicting duplicate: 21/32
+Accuracy on conflicting duplicate validation instances: 0.3636
+Accuracy on the remaining validation instances: 0.9775
+
+=== PER-CLASS F1 ===
+Cardiovascular-Pulmonary: 0.9180
+Dermatology: 1.0000
+Gastroenterology: 0.9474
+General Medicine: 0.8667
+Neurology: 0.8732
+Neurosurgery: 0.9375
+Obstetrics-Gynecology: 0.9643
+Ophthalmology: 0.9655
+Orthopedic: 0.9565
+Psychiatry-Psychology: 0.7368
+Radiology: 0.9398
+Surgery: 0.9736
+
+=== PREFIX COMPARISON ===
+Logistic Regression without keyword prefix: overall accuracy 0.4962; covered 220/434 (0.5069); uncovered 39/88 (0.4432)
+Logistic Regression with complete keywords: overall accuracy 0.5249; covered 237/434 (0.5461); uncovered 37/88 (0.4205)
+ClinicalBERT with complete keywords: overall accuracy 0.9253; covered 434/434 (1.0000); uncovered 49/88 (0.5568)
+ClinicalBERT without keyword prefix: overall accuracy 0.5345; covered 223/434 (0.5138); uncovered 56/88 (0.6364)
+Metadata-gated hybrid: overall accuracy 0.9387; covered 434/434 (1.0000); uncovered 56/88 (0.6364)
+
+=== CLASSIFICATION REPORT FOR THE HYBRID ===
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.903     0.933     0.918        60
+             Dermatology      1.000     1.000     1.000         5
+        Gastroenterology      0.947     0.947     0.947        38
+        General Medicine      0.796     0.951     0.867        41
+               Neurology      0.886     0.861     0.873        36
+            Neurosurgery      0.882     1.000     0.938        15
+   Obstetrics-Gynecology      0.931     1.000     0.964        27
+           Ophthalmology      0.933     1.000     0.966        14
+              Orthopedic      0.982     0.932     0.957        59
+   Psychiatry-Psychology      0.636     0.875     0.737         8
+               Radiology      1.000     0.886     0.940        44
+                 Surgery      1.000     0.949     0.974       175
+
+                accuracy                          0.939       522
+               macro avg      0.908     0.945     0.923       522
+            weighted avg      0.945     0.939     0.940       522
