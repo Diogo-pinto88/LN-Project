@@ -3,3 +3,8 @@ matplotlib
 seaborn
 scikit-learn
 nltk
+torch
+transformers
+datasets
+accelerate
+evaluate

@@ -1,0 +1,14 @@
+Specialty                     Precision     Recall   F1-score       TP       FP       FN
+--------------------------------------------------------------------------------------
+Cardiovascular-Pulmonary         91.77%     96.99%     94.31%      290       26        9
+Dermatology                      96.15%    100.00%     98.04%       25        1        0
+Gastroenterology                 95.98%     99.48%     97.70%      191        8        1
+General Medicine                 94.31%     96.60%     95.44%      199       12        7
+Neurology                        91.76%     92.27%     92.01%      167       15       14
+Neurosurgery                     78.35%     98.70%     87.36%       76       21        1
+Obstetrics-Gynecology            91.78%    100.00%     95.71%      134       12        0
+Ophthalmology                    97.26%    100.00%     98.61%       71        2        0
+Orthopedic                       95.53%     95.21%     95.37%      278       13       14
+Psychiatry-Psychology            85.11%    100.00%     91.95%       40        7        0
+Radiology                        99.50%     91.71%     95.44%      199        1       18
+Surgery                         100.00%     93.82%     96.81%      820        0       54

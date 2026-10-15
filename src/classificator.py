@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
-"""Classify medical specialties using the first keyword in each row.
+"""Classify medical specialties using a keyword heuristic and ClinicalBERT.
 
 The script reads a semicolon-separated CSV file row by row, ignores the first
 column when present, and predicts the medical specialty from the first keyword
-entry in the last column.
+entry in the keywords column.
+
+If the first keyword does not match one of the known specialties, the script
+falls back to a fine-tuned ClinicalBERT model stored in models/clinicalbert.
 
 Usage:
 	python3 src/classificator.py input.csv [output.txt]
@@ -21,6 +24,12 @@ import re
 import sys
 from pathlib import Path
 
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+MODEL_DIR = PROJECT_DIR / "models" / "clinicalbert"
 
 SPECIALTIES = [
 	"Cardiovascular-Pulmonary",
@@ -42,23 +51,102 @@ def normalize(text: str) -> str:
 	return re.sub(r"[^a-z0-9]+", "", text.casefold())
 
 
-SPECIALTY_BY_NORMALIZED_KEY = {
-	normalize(specialty): specialty for specialty in SPECIALTIES
-}
+SPECIALTY_BY_NORMALIZED_KEY = {normalize(specialty): specialty for specialty in SPECIALTIES}
 
 
-def predict_specialty(keywords: str) -> str:
+def parse_row(row: list[str]) -> tuple[str, str, str, str]:
+	"""Return the four non-label columns from a CSV row.
+
+	The expected format is either:
+	- label, description, sample_name, transcription, keywords
+	- description, sample_name, transcription, keywords
+	"""
+
+	if len(row) >= 5:
+		description, sample_name, transcription, keywords = row[1:5]
+	elif len(row) == 4:
+		description, sample_name, transcription, keywords = row
+	else:
+		padded = list(row[1:])
+		while len(padded) < 4:
+			padded.append("")
+		description, sample_name, transcription, keywords = padded[:4]
+
+	return (
+		description.strip(),
+		sample_name.strip(),
+		transcription.strip(),
+		keywords.strip(),
+	)
+
+
+def first_keyword_label(keywords: str) -> str:
 	first_keyword = keywords.split(",", 1)[0].strip().strip('"').strip("'")
-	normalized = normalize(first_keyword)
+	return SPECIALTY_BY_NORMALIZED_KEY.get(normalize(first_keyword), "Unknown")
 
-	if normalized in SPECIALTY_BY_NORMALIZED_KEY:
-		return SPECIALTY_BY_NORMALIZED_KEY[normalized]
 
-	return "Unknown"
+def build_text(description: str, sample_name: str, transcription: str, keywords: str) -> str:
+	return (
+		"DESCRIPTION "
+		+ description
+		+ " SAMPLE_NAME "
+		+ sample_name
+		+ " TRANSCRIPTION "
+		+ transcription
+		+ " KEYWORDS "
+		+ keywords
+	)
+
+
+def load_clinicalbert_model() -> tuple[AutoTokenizer, AutoModelForSequenceClassification]:
+	if not MODEL_DIR.exists():
+		raise FileNotFoundError(
+			f"ClinicalBERT model not found at {MODEL_DIR}. Run experiments/09_clinicalbert.py first."
+		)
+
+	tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
+	model = AutoModelForSequenceClassification.from_pretrained(MODEL_DIR)
+	model.eval()
+	return tokenizer, model
+
+
+def predict_with_clinicalbert(texts: list[str], batch_size: int = 8) -> list[str]:
+	if not texts:
+		return []
+
+	tokenizer, model = load_clinicalbert_model()
+	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+	model.to(device)
+
+	predictions: list[str] = []
+
+	with torch.no_grad():
+		for start in range(0, len(texts), batch_size):
+			batch_texts = texts[start : start + batch_size]
+			encoded = tokenizer(
+				batch_texts,
+				truncation=True,
+				padding=True,
+				max_length=256,
+				return_tensors="pt",
+			)
+			encoded = {key: value.to(device) for key, value in encoded.items()}
+			logits = model(**encoded).logits
+			batch_ids = logits.argmax(dim=-1).tolist()
+
+			for label_id in batch_ids:
+				label_name = model.config.id2label.get(int(label_id))
+				if label_name is None:
+					label_name = SPECIALTIES[int(label_id)]
+				predictions.append(label_name)
+
+	return predictions
 
 
 def classify_csv(input_path: Path, output_path: Path | None = None) -> list[str]:
-	predictions: list[str] = []
+	predictions: list[str | None] = []
+	unknown_texts: list[str] = []
+	unknown_positions: list[int] = []
 
 	with input_path.open("r", encoding="utf-8", newline="") as csv_file:
 		reader = csv.reader(csv_file, delimiter=";")
@@ -70,24 +158,42 @@ def classify_csv(input_path: Path, output_path: Path | None = None) -> list[str]
 			if row_number == 0 and row[0].strip().lower() == "medical_specialty":
 				continue
 
-			keywords = row[-1] if row else ""
-			predictions.append(predict_specialty(keywords))
+			description, sample_name, transcription, keywords = parse_row(row)
+			predicted_label = first_keyword_label(keywords)
+
+			if predicted_label == "Unknown":
+				unknown_positions.append(len(predictions))
+				unknown_texts.append(build_text(description, sample_name, transcription, keywords))
+				predictions.append(None)
+			else:
+				predictions.append(predicted_label)
+
+	if unknown_texts:
+		fallback_predictions = predict_with_clinicalbert(unknown_texts)
+
+		for position, fallback_prediction in zip(unknown_positions, fallback_predictions):
+			predictions[position] = fallback_prediction
+
+	final_predictions = [prediction or "Unknown" for prediction in predictions]
 
 	if output_path is not None:
 		output_path.parent.mkdir(parents=True, exist_ok=True)
 		with output_path.open("w", encoding="utf-8", newline="") as output_file:
-			for prediction in predictions:
+			for prediction in final_predictions:
 				output_file.write(prediction + "\n")
 	else:
-		for prediction in predictions:
+		for prediction in final_predictions:
 			print(prediction)
 
-	return predictions
+	return final_predictions
 
 
 def parse_args() -> argparse.Namespace:
 	parser = argparse.ArgumentParser(
-		description="Classify each row by the first keyword in the keywords column."
+		description=(
+			"Classify each row by the first keyword in the keywords column, "
+			"falling back to ClinicalBERT when needed."
+		)
 	)
 	parser.add_argument("input_csv", type=Path, help="Input CSV file")
 	parser.add_argument(

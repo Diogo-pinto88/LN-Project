@@ -6,7 +6,7 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 project_dir="$(cd "$script_dir/.." && pwd)"
 
 expected_file="${1:-$project_dir/data/expected_classification.txt}"
-obtained_file="${2:-$project_dir/data/obtained_classification.txt}"
+obtained_file="${2:-$project_dir/data/results.txt}"
 
 if [[ ! -f "$expected_file" ]]; then
 	echo "Error: expected file not found: $expected_file" >&2
@@ -64,4 +64,4 @@ echo "Expected file: $expected_file"
 echo "Obtained file:  $obtained_file"
 echo "Correct lines:  $correct"
 echo "Incorrect lines: $incorrect"
-echo "Precision:      ${precision}%"
+echo "Accuracy:      ${precision}%"
