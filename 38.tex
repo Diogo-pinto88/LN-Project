@@ -1,0 +1,238 @@
+\documentclass[twocolumn,10pt]{article}
+
+\usepackage{authblk}
+\usepackage{bera}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.28em}
+
+\title{\vspace{-4.2cm}\textbf{Metadata-Aware Medical Specialty Classification under Class Imbalance}}
+
+\author{\vspace{-0.2cm}
+Group 38\\
+Diogo Pinto (\textit{ist1103976}, 50\%) and
+Pedro Sanguinetti (\textit{ist1107283}, 50\%)
+}
+
+\affil{Instituto Superior Técnico, Universidade de Lisboa}
+
+\date{\vspace{-0.3cm}October 2026}
+
+\begin{document}
+
+\raggedbottom
+
+\maketitle
+\vspace{-0.8cm}
+
+\section*{\vspace{-0.4cm}Introduction}
+
+Automatically assigning clinical documents to medical specialties can support the organisation and routing of medical records. The task is challenging because clinical notes are long, specialised, and may concern several specialties. The provided data introduce further difficulties, including class imbalance, missing metadata, malformed records, contradictory duplicates, and a direct specialty cue in the keyword field.
+
+This work asks: \textbf{\textit{How do auxiliary metadata and class-aware augmentation affect balanced medical-specialty classification, and how much does performance rely on label-like keyword cues?}} We progressively compare a description-only baseline, multi-field sparse classifiers, minority-targeted augmentation, character features, and ClinicalBERT. Keyword ablations then motivate a metadata-gated hybrid that uses the direct cue when available and delegates the remaining cases to a no-prefix ClinicalBERT model.
+\vspace{-0.9cm}
+
+\section*{\vspace{-0.3cm}Data}
+
+The task contains twelve specialties. Each training instance provides the target \texttt{medical\_specialty} and four input fields: \texttt{description}, \texttt{sample\_name}, \texttt{transcription}, and \texttt{keywords}. The original training file contains \textbf{2,616} parsed instances. The updated clean evaluation set contains \textbf{398} unlabelled instances and is used only to generate the final predictions.
+\vspace{-0.4cm}
+
+\subsection*{\vspace{-0.15cm}Data Analysis}
+
+Eight malformed training instances were excluded through deterministic rules. Three contained clinical-text fragments instead of valid target labels, while five contained descriptions of approximately 28,000--33,000 characters with multiple concatenated records; four also had at least three missing input fields. Their original boundaries and labels could not be recovered reliably. The cleaned set therefore contains \textbf{2,608} instances.
+
+The class distribution is strongly imbalanced: \textit{Surgery} contains \textbf{874} instances \textbf{(33.5\%)}, whereas \textit{Dermatology} contains \textbf{25} \textbf{(1.0\%)}. Missing values are concentrated in \texttt{keywords} \textbf{(398; 15.3\%)} and \texttt{transcription} \textbf{(26; 1.0\%)} and are represented as empty strings. Furthermore, \textbf{79} groups, comprising \textbf{165} instances, have identical inputs but conflicting labels.
+
+The first comma-separated keyword maps directly to a specialty in \textbf{2,171} instances (83.24\%) and agrees with every corresponding training label. We therefore compare complete-keyword models with models in which this specialty-like prefix is removed.
+\vspace{-0.3cm}
+
+\subsection*{\vspace{-0.2cm}Data Augmentation}
+
+We tested minority-targeted random word deletion without the label-like prefix. After the train--validation split, classes with fewer than 150 training instances received at most three synthetic copies per original record. Each word had a 0.10 deletion probability; fields shorter than five words were unchanged and at least one word was preserved. This added \textbf{385} instances from six minority classes, increasing the training subset from 2,086 to \textbf{2,471}. The augmented and original data used the same no-prefix TF--IDF and class-balanced linear SVM, isolating the augmentation effect.
+\vspace{-0.54cm}
+
+\section*{\vspace{-0.35cm}Models}
+
+\textbf{Sparse models:}
+The reference baseline applies word \textbf{TF--IDF} to \textbf{\texttt{description}}, after lowercasing and Snowball stemming, followed by Multinomial \textbf{Naive Bayes}. Multi-field models concatenate the four marked fields and use class-balanced linear \textbf{SVM} or \textbf{logistic regression}. Word unigrams and bigrams were later combined with character-boundary n-grams to capture medical morphology and spelling variation. Controlled logistic-regression ablations used description only, clinical text without keywords, all fields without the specialty prefix, and complete keywords. The sparse models were implemented with NLTK and scikit-learn.
+
+\textbf{ClinicalBERT:}
+We fine-tuned \textbf{emilyalsentzer/Bio\_ClinicalBERT}, which adapts BERT to biomedical and clinical language. Inputs were ordered as \texttt{sample\_name}, \texttt{description}, \texttt{keywords}, and \texttt{transcription}, preserving concise information before \textbf{128}-token truncation. Complete-keyword and no-prefix variants were compared with balanced, unweighted, and softened class weights.
+
+\textbf{Metadata-gated hybrid:}
+The final system returns the specialty mapped from the first keyword when available; otherwise, it uses balanced no-prefix ClinicalBERT. This makes the use of the direct metadata cue explicit while forcing the fallback to learn from the remaining text.
+\vspace{-0.45cm}
+ 
+\section*{\vspace{-0.3cm}Experimental Setup}
+
+A fixed stratified \textbf{(80/20)\%} split produced \textbf{2,086} training and \textbf{522} validation instances. Every experiment used the same indices and random seed 42. All preprocessing, class weights, and augmentation were fitted only on the training subset. The official 398-instance evaluation set was never used for training or model selection.
+
+Accuracy measures overall correctness, whereas macro-F$_1$, the principal selection metric, gives equal importance to every specialty. Per-class F$_1$ detects failure on minority classes, and the confusion matrix supports error analysis.
+ 
+\subsection*{Parameters/Hyperparameters}
+
+The SVM and logistic-regression models used \textbf{$C=1.0$} and balanced class weights. Logistic regression used \texttt{lbfgs} and at most 2,000 iterations. Word TF--IDF used n-grams $(1,2)$; the character branch used \texttt{char\_wb} n-grams $(3,5)$. Each branch retained at most 100,000 features.
+
+ClinicalBERT used AdamW, two epochs, batches of eight, learning rate $2\times10^{-5}$, weight decay 0.01, and 128-token inputs. Balanced loss weights were inversely proportional to class frequency. The development checkpoint with the highest validation macro-F$_1$ was retained.
+\vspace{-0.5cm}
+
+\section*{\vspace{-0.25cm}Results}
+
+Table~\ref{tab:model-results} presents the configurations that determined the final design. Multi-field modelling markedly improved macro-F$_1$ over the baseline, whereas random-deletion augmentation produced no improvement. Character features yielded the strongest sparse model. The contrast between the ClinicalBERT variants exposes the influence of the keyword prefix.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+System & Acc. & Macro-F$_1$ & Min. F$_1$ \\
+\midrule
+TF--IDF+NB (description)  & .385 & .117 & .000 \\
+SVM (no prefix)           & .379 & .418 & .154 \\
+Augmented SVM             & .377 & .416 & .154 \\
+Word+character LR         & .561 & .590 & .286 \\
+ClinicalBERT (no prefix)  & .534 & .574 & .222 \\
+ClinicalBERT (complete)   & .925 & .914 & .778 \\
+Metadata-gated hybrid     & \textbf{.939} & \textbf{.923} & \textbf{.737} \\
+\bottomrule
+\end{tabular}}
+\caption{Selected results on the 522-instance validation set.}
+\label{tab:model-results}
+\end{table}
+
+The hybrid classified \textbf{490} of \textbf{522} instances correctly. Its rule covered \textbf{434} cases and classified all of them correctly; no-prefix ClinicalBERT classified \textbf{56} of the remaining \textbf{88}. Complete-keyword ClinicalBERT classified only \textbf{49} of those \textbf{88} uncovered cases correctly. The hybrid therefore combines the reliable mapped cue with the stronger fallback.
+
+Per-class F$_1$ ranges from \textbf{.737} for \textbf{\textit{Psychiatry-Psychology}} to \textbf{1.000} for \textbf{\textit{Dermatology}}; all twelve results are reported in Table~\ref{tab:per-class}. The confusion matrix in Figure~\ref{fig:hybrid-confusion} shows that the most frequent individual errors are \textbf{\textit{Surgery}$\rightarrow$\textit{Cardiovascular-Pulmonary}}(5), \textbf{\textit{Cardiovascular-Pulmonary}$\rightarrow$\textit{General Medicine}}(4), and \textbf{\textit{Neurology}$\rightarrow$\textit{Psychiatry-Psychology}}(4).
+
+After model selection, the fallback was retrained on all \textbf{2,608} instances. On the official evaluation set, the rule produced \textbf{320} predictions and ClinicalBERT the remaining \textbf{78}. The resulting \texttt{results.txt} contains \textbf{398} valid labels without a header. No evaluation score is reported because the labels are unavailable.
+\vspace{-0.45cm}
+
+\section*{\vspace{-0.35cm}Discussion} 
+
+The experiments answer the research question in three parts. First, auxiliary clinical fields are useful: controlled \textbf{logistic-regression} ablation increased macro-F$_1$ from \textbf{.433} with \textbf{descriptio}n only to \textbf{.524} after adding \textbf{\texttt{sample\_name}} and \textbf{\texttt{transcription}}. The remaining keyword content increased it only to \textbf{.527}, whereas restoring the specialty-like prefix raised it to \textbf{.565}. The prefix therefore acts differently from ordinary clinical metadata.
+
+Second, class-aware random deletion reduced macro-F$_1$ from \textbf{.418} to \textbf{.416}. Deleting clinical terms can remove the evidence required to distinguish related specialties. Class weighting was more effective but introduced a trade-off: unweighted \textbf{no-prefix ClinicalBERT} increased accuracy from \textbf{.534} to \textbf{.552} while reducing macro-F$_1$ from \textbf{.574} to \textbf{.427} and assigning zero F$_1$ to three classes. Balanced weights were retained because the objective requires performance across all specialties.
+
+Third, removing the prefix reduced ClinicalBERT macro-F$_1$ from \textbf{.914} to \textbf{.574}. The \textbf{hybrid} makes this dependency explicit and reaches \textbf{.923}, but its score should not be interpreted solely as clinical-text understanding; the 63.6\% fallback accuracy better represents behaviour without the direct cue. Of the hybrid's \textbf{32} errors, \textbf{21} involve conflicting \textbf{exact duplicates}. Accuracy is \textbf{36.4\%} on the \textbf{33} affected validation instances and \textbf{97.8\%} on the remainder. Three cases illustrate the main errors:
+
+\textbf{Cervical discectomy:}
+``Anterior cervical discectomy [...] decompression of spinal cord.'' The correct label is \textit{\textbf{Surgery}}, but the prediction is \textit{\textbf{Neurosurgery}}. Identical training inputs also carry \textit{Neurosurgery} and \textit{Orthopedic} labels.
+
+\textbf{Coronary angiography:}
+``Selective coronary angiography, left heart catheterization [...].'' The correct label is \textit{\textbf{Surgery}}, whereas the prediction is \textit{\textbf{Cardiovascular-Pulmonary}}. An exact training duplicate has the predicted label, and the procedure plausibly relates to both specialties.
+
+\textbf{Abdominal pain:}
+``7- to 8-day history of abdominal pain which has been persistent.'' The correct label is \textit{\textbf{Gastroenterology}}, but the prediction is \textit{\textbf{General Medicine}}. With no specific diagnosis or procedure, the broader specialty is plausible.
+The results therefore show that metadata provides the largest improvement, while augmentation is not inherently beneficial. The hybrid is effective for this dataset, but contradictory annotations and reliance on an unusually direct cue limit generalisation.
+\vspace{-0.45cm}
+
+\section*{\vspace{-0.35cm}Future Work}
+
+Future evaluation should use group-aware cross-validation to prevent identical inputs from crossing partitions and should explicitly model contradictory annotations. The fallback could use longer or hierarchical clinical encoders and clinically conservative augmentation, avoiding deletion of diagnostic terms. A confidence-aware gate should also be evaluated when keyword prefixes are missing, corrupted, or unreliable.
+
+
+\clearpage
+
+\section*{Software and LLM Use}
+
+\textbf{Software statement.}
+The implementation used NumPy, pandas, Matplotlib, seaborn,
+scikit-learn, NLTK, PyTorch, Hugging Face Transformers, and Accelerate.
+Exact package versions are provided in \texttt{requirements.txt}.
+
+\textbf{LLM-use declaration.}
+OpenAI ChatGPT/Codex was used to clarify concepts, suggest and review
+Python and Latex code, and assist with language editing and report
+organisation. The authors executed the experiments, inspected the
+generated outputs, verified the reported values against the saved
+results, and remain responsible for the methodology, interpretation,
+and final text.
+
+\nocite{*}
+
+\renewcommand{\refname}{Bibliography}
+\bibliographystyle{apalike}
+\bibliography{Project-Template/biblio}
+
+\onecolumn
+\appendix
+
+\section*{Appendix A: Extra Figures and Tables}
+
+% A minipage impede que a tabela e a figura
+% sejam colocadas em páginas diferentes.
+\begin{minipage}{\textwidth}
+
+\centering
+\captionsetup{font=small,skip=3pt}
+
+\small
+\setlength{\tabcolsep}{3pt}
+
+\resizebox{0.96\textwidth}{!}{%
+\begin{tabular}{lrrrr@{\hspace{0.7cm}}lrrrr}
+\toprule
+Specialty & Prec. & Rec. & F$_1$ & $N$
+& Specialty & Prec. & Rec. & F$_1$ & $N$ \\
+\midrule
+
+CV--Pulmonary
+& .903 & .933 & .918 & 60
+& Obstetrics--Gynecology
+& .931 & 1.000 & .964 & 27 \\
+
+Dermatology
+& 1.000 & 1.000 & 1.000 & 5
+& Ophthalmology
+& .933 & 1.000 & .966 & 14 \\
+
+Gastroenterology
+& .947 & .947 & .947 & 38
+& Orthopedic
+& .982 & .932 & .957 & 59 \\
+
+General Medicine
+& .796 & .951 & .867 & 41
+& Psychiatry--Psychology
+& .636 & .875 & .737 & 8 \\
+
+Neurology
+& .886 & .861 & .873 & 36
+& Radiology
+& 1.000 & .886 & .940 & 44 \\
+
+Neurosurgery
+& .882 & 1.000 & .938 & 15
+& Surgery
+& 1.000 & .949 & .974 & 175 \\
+
+\bottomrule
+\end{tabular}}
+
+\captionof{table}{Per-class results of the metadata-gated hybrid on the
+522-instance validation set. Prec., Rec., and $N$ denote precision,
+recall, and support, respectively.}
+\label{tab:per-class}
+
+\vspace{2cm}
+
+\includegraphics[
+    width=0.57\textwidth
+]{final_confusion_matrix.png}
+
+\captionof{figure}{Confusion matrix of the metadata-gated hybrid on the
+validation set. Rows represent correct specialties and columns represent
+predicted specialties. Non-zero cells contain the instance count and
+row percentage.}
+\label{fig:hybrid-confusion}
+
+\end{minipage}
+
+\end{document}

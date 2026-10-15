@@ -1,0 +1,35 @@
+=== CLINICALBERT WITHOUT PREFIX AND WITHOUT CLASS WEIGHTS ===
+Model: emilyalsentzer/Bio_ClinicalBERT
+Keyword prefix removed: yes
+Class weights: no
+Maximum tokens: 128
+Epochs: 2
+Training instances: 2086
+Validation instances: 522
+Training prefixes removed: 1737
+Validation prefixes removed: 434
+Correct predictions: 288/522
+Accuracy: 0.5517
+Macro-F1: 0.4275
+Minimum per-class F1: Dermatology = 0.0000
+Best checkpoint: /Users/diogopinto/Desktop/TECNICO/LN/PROJ/LN-Project/.checkpoints/14_clinical_bert_without_prefix_no_weights/checkpoint-522
+
+=== CLASSIFICATION REPORT ===
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.533     0.533     0.533        60
+             Dermatology      0.000     0.000     0.000         5
+        Gastroenterology      0.625     0.395     0.484        38
+        General Medicine      0.739     0.829     0.782        41
+               Neurology      0.559     0.528     0.543        36
+            Neurosurgery      0.000     0.000     0.000        15
+   Obstetrics-Gynecology      0.643     0.333     0.439        27
+           Ophthalmology      0.000     0.000     0.000        14
+              Orthopedic      0.444     0.475     0.459        59
+   Psychiatry-Psychology      1.000     0.875     0.933         8
+               Radiology      0.351     0.295     0.321        44
+                 Surgery      0.553     0.749     0.636       175
+
+                accuracy                          0.552       522
+               macro avg      0.454     0.418     0.427       522
+            weighted avg      0.517     0.552     0.524       522

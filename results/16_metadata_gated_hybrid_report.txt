@@ -1,0 +1,38 @@
+=== METADATA-GATED HYBRID ===
+
+Input model: Experiment 13 ClinicalBERT without prefix
+Decision rule: use the mapped first keyword when available; otherwise use the no-prefix ClinicalBERT prediction
+Official evaluation set used: no
+
+=== VALIDATION RESULTS ===
+Validation instances: 522
+Correct predictions: 490/522
+Accuracy: 0.9387
+Macro-F1: 0.9233
+Weighted F1: 0.9401
+Minimum per-class F1: Psychiatry-Psychology = 0.7368
+
+=== DECISION SOURCES ===
+Keyword rule: 434 examples, 434 correct, accuracy 1.0000
+ClinicalBERT fallback: 88 examples, 56 correct, accuracy 0.6364
+Predictions changed relative to no-prefix ClinicalBERT: 211
+
+=== CLASSIFICATION REPORT ===
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.903     0.933     0.918        60
+             Dermatology      1.000     1.000     1.000         5
+        Gastroenterology      0.947     0.947     0.947        38
+        General Medicine      0.796     0.951     0.867        41
+               Neurology      0.886     0.861     0.873        36
+            Neurosurgery      0.882     1.000     0.938        15
+   Obstetrics-Gynecology      0.931     1.000     0.964        27
+           Ophthalmology      0.933     1.000     0.966        14
+              Orthopedic      0.982     0.932     0.957        59
+   Psychiatry-Psychology      0.636     0.875     0.737         8
+               Radiology      1.000     0.886     0.940        44
+                 Surgery      1.000     0.949     0.974       175
+
+                accuracy                          0.939       522
+               macro avg      0.908     0.945     0.923       522
+            weighted avg      0.945     0.939     0.940       522

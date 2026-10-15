@@ -29,14 +29,14 @@ EXPECTED_LABELS = [
 ]
 
 
-def load_data():
+def load_data(test_filename="test_no_labels_clean.csv"):
     train = pd.read_csv(
         DATA_DIR / "train.csv",
         sep=";",
     )
 
     test = pd.read_csv(
-        DATA_DIR / "test_no_labels.csv",
+        DATA_DIR / test_filename,
         sep=";",
         header=None,
         names=FEATURE_COLUMNS,

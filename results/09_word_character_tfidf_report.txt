@@ -1,0 +1,86 @@
+Word and character TF-IDF experiment
+===================================
+
+Complete keywords used: yes
+Random state: 42
+Validation size: 0.2
+Training instances: 2086
+Validation instances: 522
+
+Word TF-IDF parameters:
+- Analyzer: word
+- N-grams: (1, 2)
+- Minimum document frequency: 2
+- Maximum features: 100000
+- Sublinear term frequency: yes
+
+Character TF-IDF parameters:
+- Analyzer: char_wb
+- N-grams: (3, 5)
+- Minimum document frequency: 2
+- Maximum features: 100000
+- Sublinear term frequency: yes
+
+Logistic Regression parameters:
+- C: 1.0
+- Class weight: balanced
+- Solver: lbfgs
+- Maximum iterations: 2000
+
+Summary:
+     configuration  number_of_features  accuracy  macro_f1 minimum_f1_label  minimum_f1  classes_below_0.25  correct_predictions
+         word_only              100000     0.525     0.565        Radiology       0.346                   0                  274
+word_and_character              200000     0.561     0.590     Neurosurgery       0.286                   0                  293
+
+Prediction comparison:
+- Predictions changed: 41
+- Wrong to correct: 28
+- Correct to wrong: 9
+
+
+==================================================
+Word TF-IDF
+==================================================
+
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.478     0.550     0.512        60
+             Dermatology      1.000     0.600     0.750         5
+        Gastroenterology      0.542     0.684     0.605        38
+        General Medicine      0.526     0.976     0.684        41
+               Neurology      0.389     0.389     0.389        36
+            Neurosurgery      0.273     0.600     0.375        15
+   Obstetrics-Gynecology      0.513     0.741     0.606        27
+           Ophthalmology      0.600     0.857     0.706        14
+              Orthopedic      0.493     0.593     0.538        59
+   Psychiatry-Psychology      0.667     1.000     0.800         8
+               Radiology      0.378     0.318     0.346        44
+                 Surgery      0.769     0.343     0.474       175
+
+                accuracy                          0.525       522
+               macro avg      0.552     0.638     0.565       522
+            weighted avg      0.578     0.525     0.513       522
+
+
+==================================================
+Word and character TF-IDF
+==================================================
+
+                          precision    recall  f1-score   support
+
+Cardiovascular-Pulmonary      0.553     0.700     0.618        60
+             Dermatology      1.000     0.600     0.750         5
+        Gastroenterology      0.571     0.737     0.644        38
+        General Medicine      0.635     0.976     0.769        41
+               Neurology      0.366     0.417     0.390        36
+            Neurosurgery      0.222     0.400     0.286        15
+   Obstetrics-Gynecology      0.553     0.778     0.646        27
+           Ophthalmology      0.600     0.857     0.706        14
+              Orthopedic      0.513     0.661     0.578        59
+   Psychiatry-Psychology      0.667     1.000     0.800         8
+               Radiology      0.425     0.386     0.405        44
+                 Surgery      0.805     0.354     0.492       175
+
+                accuracy                          0.561       522
+               macro avg      0.576     0.655     0.590       522
+            weighted avg      0.615     0.561     0.550       522

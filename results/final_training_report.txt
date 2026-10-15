@@ -1,0 +1,31 @@
+=== FINAL HYBRID TRAINING AND PREDICTION ===
+
+Model: emilyalsentzer/Bio_ClinicalBERT
+ClinicalBERT keyword prefix removed: yes
+ClinicalBERT class weights: balanced
+Random seed: 42
+Maximum tokens: 128
+Epochs: 2
+Training batch size: 8
+Learning rate: 2e-05
+Weight decay: 0.01
+Training instances: 2608
+Test instances: 398
+Keyword-rule predictions: 320
+ClinicalBERT fallback predictions: 78
+results.txt lines: 398
+Official test labels used: no
+
+=== FINAL PREDICTION COUNTS ===
+Surgery                     137
+Cardiovascular-Pulmonary     45
+Radiology                    34
+General Medicine             34
+Orthopedic                   30
+Neurology                    29
+Gastroenterology             27
+Obstetrics-Gynecology        20
+Neurosurgery                 18
+Psychiatry-Psychology        11
+Ophthalmology                 9
+Dermatology                   4
