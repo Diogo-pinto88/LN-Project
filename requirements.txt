@@ -7,5 +7,3 @@ nltk==3.10.3
 torch==2.14.1
 transformers==5.19.0
 accelerate==1.15.0
-datasets
-evaluate

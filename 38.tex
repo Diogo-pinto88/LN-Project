@@ -14,9 +14,8 @@
 \title{\vspace{-4.2cm}\textbf{Metadata-Aware Medical Specialty Classification under Class Imbalance}}
 
 \author{\vspace{-0.2cm}
-Group 38\\
 Diogo Pinto (\textit{ist1103976}, 50\%) and
-Pedro Sanguinetti (\textit{ist1107283}, 50\%)
+Pedro Sanguinetti (\textit{ist1107283}, 50\%)\\Group 38
 }
 
 \affil{Instituto Superior Técnico, Universidade de Lisboa}
@@ -59,10 +58,10 @@ We tested minority-targeted random word deletion without the label-like prefix. 
 \section*{\vspace{-0.35cm}Models}
 
 \textbf{Sparse models:}
-The reference baseline applies word \textbf{TF--IDF} to \textbf{\texttt{description}}, after lowercasing and Snowball stemming, followed by Multinomial \textbf{Naive Bayes}. Multi-field models concatenate the four marked fields and use class-balanced linear \textbf{SVM} or \textbf{logistic regression}. Word unigrams and bigrams were later combined with character-boundary n-grams to capture medical morphology and spelling variation. Controlled logistic-regression ablations used description only, clinical text without keywords, all fields without the specialty prefix, and complete keywords. The sparse models were implemented with NLTK and scikit-learn.
+The reference baseline applies word \textbf{TF--IDF} to \textbf{\texttt{description}}, after lowercasing and Snowball stemming, followed by Multinomial \textbf{Naive Bayes}. Multi-field models concatenate the four marked fields and use class-balanced linear \textbf{SVM} or \textbf{logistic regression}. Word unigrams and bigrams were later combined with character-boundary n-grams to capture medical morphology and spelling variation. Controlled logistic-regression ablations used description only, clinical text without keywords, all fields without the specialty prefix, and complete keywords. The sparse models were implemented with NLTK and scikit-learn \cite{bird2009nltk,pedregosa2011scikit}.
 
 \textbf{ClinicalBERT:}
-We fine-tuned \textbf{emilyalsentzer/Bio\_ClinicalBERT}, which adapts BERT to biomedical and clinical language. Inputs were ordered as \texttt{sample\_name}, \texttt{description}, \texttt{keywords}, and \texttt{transcription}, preserving concise information before \textbf{128}-token truncation. Complete-keyword and no-prefix variants were compared with balanced, unweighted, and softened class weights.
+We fine-tuned \textbf{emilyalsentzer/Bio\_ClinicalBERT}, which adapts BERT to biomedical and clinical language \cite{devlin2019bert,alsentzer2019clinicalbert}. Inputs were ordered as \texttt{sample\_name}, \texttt{description}, \texttt{keywords}, and \texttt{transcription}, preserving concise information before \textbf{128}-token truncation. Both keyword conditions were evaluated with balanced class weights. For the no-prefix setting, we additionally compared unweighted and softened-weight variants.
 
 \textbf{Metadata-gated hybrid:}
 The final system returns the specialty mapped from the first keyword when available; otherwise, it uses balanced no-prefix ClinicalBERT. This makes the use of the direct metadata cue explicit while forcing the fallback to learn from the remaining text.
@@ -70,13 +69,14 @@ The final system returns the specialty mapped from the first keyword when availa
  
 \section*{\vspace{-0.3cm}Experimental Setup}
 
-A fixed stratified \textbf{(80/20)\%} split produced \textbf{2,086} training and \textbf{522} validation instances. Every experiment used the same indices and random seed 42. All preprocessing, class weights, and augmentation were fitted only on the training subset. The official 398-instance evaluation set was never used for training or model selection.
+A fixed stratified \textbf{80\%/20\%} split produced \textbf{2,086} training and \textbf{522} validation instances. Every experiment used the same indices and random seed 42. All preprocessing, class weights, and augmentation were fitted only on the training subset. The official 398-instance evaluation set was never used for training or model selection.
 
 Accuracy measures overall correctness, whereas macro-F$_1$, the principal selection metric, gives equal importance to every specialty. Per-class F$_1$ detects failure on minority classes, and the confusion matrix supports error analysis.
  
 \subsection*{Parameters/Hyperparameters}
 
-The SVM and logistic-regression models used \textbf{$C=1.0$} and balanced class weights. Logistic regression used \texttt{lbfgs} and at most 2,000 iterations. Word TF--IDF used n-grams $(1,2)$; the character branch used \texttt{char\_wb} n-grams $(3,5)$. Each branch retained at most 100,000 features.
+The SVM and logistic-regression models used \textbf{$C=1.0$},
+controlling regularisation strength, and balanced class weights. Logistic regression used \texttt{lbfgs} and at most 2,000 iterations. Word TF--IDF used n-grams $(1,2)$; the character branch used \texttt{char\_wb} n-grams $(3,5)$. Each branch retained at most 100,000 features.
 
 ClinicalBERT used AdamW, two epochs, batches of eight, learning rate $2\times10^{-5}$, weight decay 0.01, and 128-token inputs. Balanced loss weights were inversely proportional to class frequency. The development checkpoint with the highest validation macro-F$_1$ was retained.
 \vspace{-0.5cm}
@@ -116,7 +116,7 @@ After model selection, the fallback was retrained on all \textbf{2,608} instance
 
 \section*{\vspace{-0.35cm}Discussion} 
 
-The experiments answer the research question in three parts. First, auxiliary clinical fields are useful: controlled \textbf{logistic-regression} ablation increased macro-F$_1$ from \textbf{.433} with \textbf{descriptio}n only to \textbf{.524} after adding \textbf{\texttt{sample\_name}} and \textbf{\texttt{transcription}}. The remaining keyword content increased it only to \textbf{.527}, whereas restoring the specialty-like prefix raised it to \textbf{.565}. The prefix therefore acts differently from ordinary clinical metadata.
+The experiments answer the research question in three parts. First, auxiliary clinical fields are useful: controlled \textbf{logistic-regression} ablation increased macro-F$_1$ from \textbf{.433} with \textbf{description} only to \textbf{.524} after adding \textbf{\texttt{sample\_name}} and \textbf{\texttt{transcription}}. The remaining keyword content increased it only to \textbf{.527}, whereas restoring the specialty-like prefix raised it to \textbf{.565}. The prefix therefore acts differently from ordinary clinical metadata.
 
 Second, class-aware random deletion reduced macro-F$_1$ from \textbf{.418} to \textbf{.416}. Deleting clinical terms can remove the evidence required to distinguish related specialties. Class weighting was more effective but introduced a trade-off: unweighted \textbf{no-prefix ClinicalBERT} increased accuracy from \textbf{.534} to \textbf{.552} while reducing macro-F$_1$ from \textbf{.574} to \textbf{.427} and assigning zero F$_1$ to three classes. Balanced weights were retained because the objective requires performance across all specialties.
 
@@ -140,11 +140,23 @@ Future evaluation should use group-aware cross-validation to prevent identical i
 
 \clearpage
 
+\nocite{lnproject2026}
+
+\renewcommand{\refname}{Bibliography}
+\bibliographystyle{apalike}
+\bibliography{Project-Template/biblio}
+
 \section*{Software and LLM Use}
 
 \textbf{Software statement.}
-The implementation used NumPy, pandas, Matplotlib, seaborn,
-scikit-learn, NLTK, PyTorch, Hugging Face Transformers, and Accelerate.
+The implementation used NumPy \cite{harris2020numpy},
+pandas \cite{mckinney2010pandas},
+Matplotlib \cite{hunter2007matplotlib},
+seaborn \cite{waskom2021seaborn},
+scikit-learn, NLTK,
+PyTorch \cite{paszke2019pytorch},
+Hugging Face Transformers \cite{wolf2020transformers},
+and Accelerate.
 Exact package versions are provided in \texttt{requirements.txt}.
 
 \textbf{LLM-use declaration.}
@@ -154,12 +166,6 @@ organisation. The authors executed the experiments, inspected the
 generated outputs, verified the reported values against the saved
 results, and remain responsible for the methodology, interpretation,
 and final text.
-
-\nocite{*}
-
-\renewcommand{\refname}{Bibliography}
-\bibliographystyle{apalike}
-\bibliography{Project-Template/biblio}
 
 \onecolumn
 \appendix
@@ -223,9 +229,7 @@ recall, and support, respectively.}
 
 \vspace{2cm}
 
-\includegraphics[
-    width=0.57\textwidth
-]{final_confusion_matrix.png}
+\includegraphics[width=0.72\textwidth]{results/final_confusion_matrix.png}
 
 \captionof{figure}{Confusion matrix of the metadata-gated hybrid on the
 validation set. Rows represent correct specialties and columns represent
